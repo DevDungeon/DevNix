@@ -14,3 +14,4 @@
     - create rpm packages
     - change application list/grouping
     - how to delete unwanted apps
+- Make a devnix man page
