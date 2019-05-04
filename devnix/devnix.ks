@@ -13,6 +13,17 @@ part / --size 9656
 # is the desired build target anyway.
 #-bcm283x-firmware
 
+# Rebranding https://opensourceforu.com/2010/01/roll-out-a-fedora-remix/
+-fedora-logos
+-fedora-release
+-fedora-release-notes
+-fedora-release-workstation
+-system-release
+#generic-release
+generic-logos
+generic-release-notes
+generic-release-workstation
+
 util-linux-user
 zsh
 vim
@@ -96,34 +107,12 @@ manedit
 
 %post
 
-
-
-yum groupinstall -y "Development Tools"
-
-Echo "TEsting ==========================================================================================================="
-
-echo "Current dir:"
-echo $PWD
-echo $(pwd)
-
+echo "DevNix 1.0" > /etc/system-release
 
 %end
 
+
 %post --nochroot
-
-echo "Testing nochroot as well"
-
-echo "pwd"
-echo $PWD
-echo $(pwd)
-
-echo "install root: expect: / or something "
-echo $INSTALL_ROOT
-
-echo "liveroot: expect /mnt/ or /tmp/"
-echo $LIVE_ROOT
-
-
 
 
 #dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
@@ -137,24 +126,11 @@ sudo mv ttf $INSTALL_ROOT/usr/share/fonts/hack
 # Ubuntu font
 wget https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip
 unzip fad7939b-ubuntu-font-family-0.83.zip
+rm fad7939b-ubuntu-font-family-0.83.zip
 sudo mv ubuntu-font-family-0.83 $INSTALL_ROOT/usr/share/fonts
 
-#fc-cache -f -v
 
 
-#sudo systemctl enable docker
-#sudo systemctl start docker
-#sudo groupadd docker
-#sudo chown root:docker /var/run/docker.sock
-#docker pull alpine
-
-
-
-#touch testing-where-iam.txt
-#cd /root
-#touch testing-root-home.txt
-#cd /
-#touch testing-realroot.txt
 
 %end
 
