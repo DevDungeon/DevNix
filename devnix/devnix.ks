@@ -1,134 +1,57 @@
 %include ../fedora-live-workstation.ks
-
-#network --bootproto=dhcp --device=eth0 --activate --onboot=on
+%include devnix-packages.ks
+%include devnix-fonts.ks
 
 # Override disk size in fedora-live-workstation.ks so it
 # has enough room to build. Does not indicate size of final iso
 part / --size 9656
 
-%packages
 
-# This package breaks build when trying to build fedora-disk
-# so exclude it. Does not affect fedora-live-workstation which
-# is the desired build target anyway.
-#-bcm283x-firmware
 
-# Rebranding https://opensourceforu.com/2010/01/roll-out-a-fedora-remix/
--fedora-logos
--fedora-release
--fedora-release-notes
--fedora-release-workstation
--system-release
-#generic-release
-generic-logos
-generic-release-notes
-generic-release-workstation
 
-util-linux-user
-zsh
-vim
-neovim
-gvim
-emacs
-gcc-c++
-libXt-devel
-libXScrnSaver
-libxkbfile-devel
-libsecret-devel
-chromium
-gpg
-keepass
-filezilla
-ruby
-jruby
-cargo
-nodejs
-golang
-java-1.8.0-openjdk
-java-1.8.0-openjdk-devel
-java-1.8.0-openjdk-openjfx
-ant
-maven
-gradle
-# Docker breaks the auto login on livecd
-#docker
-pidgin-otr
 
-gettext
-diffstat
-doxygen
-git
-patch
-patchutils
-subversion
-systemtap
-archmage
-buildbot
-bzr
-colordiff
-cvs
-cvs2cl
-cvsgraph
-cvsps
-darcs
-dejagnu
-expect
-git-annex
-#git-cola
-git2cl
-gtranslator
-highlight
-lcov
-meld
-mercurial
-monotone
-myrepos
-nemiver
-quilt
-rapidsvn
-rcs
-robodoc
-scanmem
-subunit
-svn2cl
-tig
-tkcvs
-#tortoisehg
-translate-toolkit
-utrac
 
-gitg
-#qgit
-manedit
-#gambas3-ide
+%post --erroronfail
+
+
+## Docker
+# yum -y install docker
+# systemctl start docker
+# groupadd docker
+# chown root:docker /var/run/docker.sock
+# docker pull alpine
+# systemctl stop docker
+
+## Change default shell
+sed -i "s/\/bin\/bash/\/bin\/zsh/" /etc/default/useradd
+
+# Common packages for programming languages
+#npm install -g typescript nativescript @angular/cli yarn tslint electron express
+#yum install python3-pip pyhon3-venv python3-paramiko python3-... flask django gtk pygobject
+#gem install bundler
+
+
+# Set /etc/system-release to DevNix name to replace fedora
+# Change icon https://bugzilla.redhat.com/show_bug.cgi?id=464120
+
 
 %end
 
 
-%post
-
-echo "DevNix 1.0" > /etc/system-release
-
-%end
 
 
-%post --nochroot
 
+%post --nochroot --erroronfail
 
-#dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+# Add .vimrc, .zshrc, .zshrc.local, and .ssh/config in all user home dirs
 
-# Hack font
-wget https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
-unzip Hack-v3.003-ttf.zip
-rm Hack-v3.003-ttf.zip
-sudo mv ttf $INSTALL_ROOT/usr/share/fonts/hack
-
-# Ubuntu font
-wget https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip
-unzip fad7939b-ubuntu-font-family-0.83.zip
-rm fad7939b-ubuntu-font-family-0.83.zip
-sudo mv ubuntu-font-family-0.83 $INSTALL_ROOT/usr/share/fonts
-
+# cat resources/vimrc >> /etc/vimrc
+# cat resources/zshrc >> /etc/zshrc
+# cat resources/ssh_config >> /etc/ssh_config
+cp resources/vimrc $INSTALL_ROOT/etc/skel/.vimrc
+cp resources/zshrc $INSTALL_ROOT/etc/skel/.zshrc
+cp resources/ssh_config $INSTALL_ROOT/etc/skel/.ssh/config
+#chmod on .ssh folder
 
 
 
