@@ -49,7 +49,7 @@ FOE
 # https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
 cat > /etc/dconf/db/local.d/00-extensions <<FOE
 [org/gnome/shell]
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=[['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
 FOE
 # TODO include gnome-shell-extension-dash-to-dock as turned on
 # dconf read /org/gnome/shell/enabled-extensions
