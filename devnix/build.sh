@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo livecd-creator devnix.ks --fslabel=DevNix-1.0-Live-x86_64
+sudo livecd-creator devnix.ks --fslabel=DevNix-Live-x86_64
 

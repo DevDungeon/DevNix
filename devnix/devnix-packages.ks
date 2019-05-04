@@ -2,7 +2,7 @@
 
 
 
-%packages --erroronfail
+%packages
 
 # This package breaks build when trying to build fedora-disk
 # so exclude it. Does not affect fedora-live-workstation which
@@ -14,12 +14,18 @@
 
 util-linux-user
 yum-utils
+gnome-tweak-tool
+gnome-shell-extension-dash-to-dock
+
 zsh
 fish
+
 vim
 neovim
 gvim
+
 tmux
+
 git
 emacs
 
@@ -63,7 +69,6 @@ java-11-openjdk-headless
 java-11-openjdk-devel
 java-11-openjdk-src
 java-11-openjdk-javadoc
-java-11-openjdk-openjfx
 
 # MariaDB (Mysql) client+server
 mariadb-server
@@ -150,8 +155,9 @@ manedit
 
 #amass
 nmap
-nmap-frontend
 wireshark
+libpcap
+libpcap-devel
 bind-utils
 traceroute
 #nslookup

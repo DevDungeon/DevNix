@@ -6,12 +6,12 @@
 -fedora-logos
 -fedora-release
 -fedora-release-notes
--fedora-release-workstation
--system-release
-generic-logos
+#-fedora-release-workstation
+#-system-release
 generic-release
+generic-logos
 generic-release-notes
-generic-release-workstation
+#generic-release-workstation
 
 
 %end
@@ -19,8 +19,8 @@ generic-release-workstation
 
 %post
 
-echo "DevNix 0.1" > /etc/system-release
-
+echo "DevNix" > /etc/system-release
+#echo "DevNix" > /etc/issue
 
 # /usr/share/doc/generic-release-notes
 # /usr/share/doc/generic-release-notes/README.Generic-Release-Notes
@@ -105,3 +105,4 @@ FOE
 
 
 %end
+
