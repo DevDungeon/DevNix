@@ -57,20 +57,27 @@ FOE
 ## Set up Gnome caps -> Escape mapping
 cat > /etc/dconf/db/local.d/00-keymaps <<FOE
 [org/gnome/desktop/input-sources]
-xkb-options="['caps:escape']"
+xkb-options=['caps:escape']
+FOE
+
+# Set custom background
+# https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
+cat > /etc/dconf/db/local.d/00-wallpaper<<FOE
+[org/gnome/desktop/background]
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
+picture-options='scaled'
+primary-color='000000'
+secondary-color='333333'
 FOE
 
 %end
 
 
-
-%end
-
-
-
-
-
 %post --nochroot --erroronfail
+
+# Add in the wallpaper needed that was set in the previous section
+mkdir -p $INSTALL_ROOT/usr/local/share/backgrounds
+cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/backgrounds/wallpaper.png
 
 # Add .vimrc, .zshrc, .zshrc.local, and .ssh/config in all user home dirs
 
@@ -86,7 +93,21 @@ cp resources/ssh_config $INSTALL_ROOT/etc/skel/.ssh/config
 chmod 600 $INSTALL_ROOT/etc/skel/.ssh/config
 
 
+mkdir -p $INSTALL_ROOT/usr/share/anaconda/boot
+cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/boot/splash.png
+cp resources/anaconda/syslinux-splash.png $INSTALL_ROOT/usr/share/anaconda/boot/syslinux-splash.png
 
+mkdir -p $INSTALL_ROOT/usr/share/anaconda/pixmaps
+cp resources/anaconda/anaconda_header.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/anaconda_header.png
+cp resources/anaconda/progress_first.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/progress_first.png
+cp resources/anaconda/sidebar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/sidebar-bg.png
+cp resources/anaconda/sidebar-logo.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/sidebar-logo.png
+cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash.png
+cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
+
+mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
+cp resources/first_boot/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+cp resources/first_boot/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
 
 %end
 

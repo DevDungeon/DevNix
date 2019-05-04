@@ -37,7 +37,7 @@ chsh # /bin/zsh
 ## Setup the Zsh and Vim dotfiles:
 
 
-get zsh and vimrc and ssh config files from nanobin or self repo
+get zsh and ionimrc and ssh config files from nanobin or self repo
 
 ```bash
 git clone https://github.com/NanoDano/NanoBin
@@ -78,7 +78,7 @@ cd ~/src
 ```
 
 
-## Customize Gnome Desktop
+# Customize Gnome Desktop
 
 https://www.devdungeon.com/content/customizing-gnome-3-desktop-environment-arch-linux
 
@@ -890,4 +890,4 @@ livecd-iso-to-disk /path/to/the.iso /dev/sdx
 - Make a video walking through the entire setup process and showing
   all the customizations and features
 - add kolour paint or equivalent
-- remove stuff I don't need like contacts/   
+- remove stuff I don't need like contacts/
