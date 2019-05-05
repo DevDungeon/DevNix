@@ -45,19 +45,19 @@ firefox
 #arduino
 #fritzing
 
-gpg
-keepass
-ruby
-jruby
-cargo
-nodejs
-golang
+#gpg
+#keepass
+#ruby
+#jruby
+#cargo
+#nodejs
+#golang
 
 # For VSCode building
-libXt-devel
-libXScrnSaver
-libxkbfile-devel
-libsecret-devel
+#libXt-devel
+#libXScrnSaver
+#libxkbfile-devel
+#libsecret-devel
 
 
 

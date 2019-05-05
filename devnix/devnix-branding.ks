@@ -19,8 +19,15 @@ generic-release-notes
 
 %post
 
-echo "DevNix" > /etc/system-release
+#echo "DevNix" > /etc/system-release
 #echo "DevNix" > /etc/issue
+
+# Installer Icons
+#/usr/share/icons/hicolor/scalable/apps
+#/anaconda.svg #48x48
+#fedora-logo-icon.svg #220x254
+#fedora-logo-sprite.svg #220x254
+
 
 # /usr/share/doc/generic-release-notes
 # /usr/share/doc/generic-release-notes/README.Generic-Release-Notes
@@ -34,27 +41,23 @@ nanodano@devdungeon.com
 
 EOF
 
-
+# https://www.freedesktop.org/software/systemd/man/os-release.html
 cat > /usr/lib/os-release <<FOE
 NAME=DevNix
 VERSION="1 (Workstation Edition)"
 ID=devnix
-VERSION_ID=1
+VERSION_ID=1.0
 VERSION_CODENAME="alpha"
 PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
 ANSI_COLOR="0;34"
-LOGO=fedora-logo-icon
+LOGO=devnix-icon
 CPE_NAME="cpe:/o:fedoraproject:fedora:30"
 HOME_URL="https://www.devdungeon.com/devnix"
 DOCUMENTATION_URL="https://www.devdungeon.com/devnix"
-SUPPORT_URL="https://fedoraproject.org/wiki/Communicating_and_getting_help"
-BUG_REPORT_URL="https://bugzilla.redhat.com/"
-REDHAT_BUGZILLA_PRODUCT="Fedora"
-REDHAT_BUGZILLA_PRODUCT_VERSION=30
-REDHAT_SUPPORT_PRODUCT="Fedora"
-REDHAT_SUPPORT_PRODUCT_VERSION=30
-PRIVACY_POLICY_URL="https://fedoraproject.org/wiki/Legal:PrivacyPolicy"
+SUPPORT_URL="https://www.devdungeon.com/devnix"
+BUG_REPORT_URL="https://www.devdungeon.com/devnix"
+PRIVACY_POLICY_URL="https://www.devdungeon.com/content/privacy-policy"
 VARIANT="Workstation Edition"
 VARIANT_ID=workstation
 FOE
@@ -134,7 +137,9 @@ cp resources/anaconda/sidebar-logo.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/
 cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash.png
 cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
 
+# TODO do this once and store the .lss in repo # yum install netpbm-progs syslinux-perl
 pngtopnm $INSTALL_ROOT/usr/share/anaconda/boot/splash.png | ppmtolss16 > $INSTALL_ROOT/usr/share/anaconda/boot/splash.lss
+
 
 mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
 cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
