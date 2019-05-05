@@ -13,24 +13,32 @@
 util-linux-user
 yum-utils
 
+# for pngtopnm to make .lss files
+netpbm-progs
+# for ppmtolss16 to make .lss files
+syslinux-perl
+
 zsh
-fish
+#fish
 
 vim
-neovim
-gvim
+#neovim
+#gvim
 
 tmux
 
 git
-emacs
+#emacs
 
-links
-lynx
+#links
+#lynx
 firefox
 #chromium
 #filezilla
 #thunderbird
+
+#gimp
+#kolourpaint
 
 #tomcat? httpd? nginx?
 
@@ -53,11 +61,11 @@ libsecret-devel
 
 
 
-java-1.8.0-openjdk
-java-1.8.0-openjdk-devel
-java-1.8.0-openjdk-openjfx
-java-1.8.0-openjdk-src
-java-1.8.0-openjdk-javadoc
+#java-1.8.0-openjdk
+#java-1.8.0-openjdk-devel
+#java-1.8.0-openjdk-openjfx
+#java-1.8.0-openjdk-src
+#java-1.8.0-openjdk-javadoc
 
 # Maybe too much space
 #java-11-openjdk
@@ -79,7 +87,7 @@ sqlite
 #docker
 
 # Chat
-pidgin-otr
+#pidgin-otr
 
 # CLI apps
 #irssi

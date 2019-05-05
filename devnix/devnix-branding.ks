@@ -134,6 +134,8 @@ cp resources/anaconda/sidebar-logo.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/
 cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash.png
 cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
 
+pngtopnm $INSTALL_ROOT/usr/share/anaconda/boot/splash.png | ppmtolss16 > $INSTALL_ROOT/usr/share/anaconda/boot/splash.lss
+
 mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
 cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
 cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
@@ -144,5 +146,6 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome
 sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.desktop
 # Change install button if desired
 #$INSTALL_ROOT/usr/share/anaconda/gnome/install-button.png
+
 
 %end
