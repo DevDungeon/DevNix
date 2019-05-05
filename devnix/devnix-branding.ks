@@ -25,14 +25,14 @@ echo "DevNix" > /etc/system-release
 # /usr/share/doc/generic-release-notes
 # /usr/share/doc/generic-release-notes/README.Generic-Release-Notes
 mkdir -p /usr/share/licenses/devnix-release
-cat > /usr/share/licenses/devnix-release/README.md' <<FOE
+cat > /usr/share/licenses/devnix-release/README.md <<EOF
 # DevNix Release Information
 
 ## Contact
 
 nanodano@devdungeon.com
 
-FOE
+EOF
 
 
 cat > /usr/lib/os-release <<FOE
@@ -58,6 +58,7 @@ PRIVACY_POLICY_URL="https://fedoraproject.org/wiki/Legal:PrivacyPolicy"
 VARIANT="Workstation Edition"
 VARIANT_ID=workstation
 FOE
+
 
 
 # /usr/share/anaconda/boot/splash.png
@@ -116,3 +117,25 @@ FOE
 
 %end
 
+%post --nochroot --erroronfail
+
+# Set /etc/system-release to DevNix name to replace fedora
+# Change icon https://bugzilla.redhat.com/show_bug.cgi?id=464120
+
+mkdir -p $INSTALL_ROOT/usr/share/anaconda/boot
+cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/boot/splash.png
+cp resources/anaconda/syslinux-splash.png $INSTALL_ROOT/usr/share/anaconda/boot/syslinux-splash.png
+
+mkdir -p $INSTALL_ROOT/usr/share/anaconda/pixmaps
+cp resources/anaconda/anaconda_header.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/anaconda_header.png
+cp resources/anaconda/progress_first.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/progress_first.png
+cp resources/anaconda/sidebar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/sidebar-bg.png
+cp resources/anaconda/sidebar-logo.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/sidebar-logo.png
+cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash.png
+cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
+
+mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
+cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+
+%end

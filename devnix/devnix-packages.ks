@@ -10,12 +10,8 @@
 #-bcm283x-firmware
 
 
-
-
 util-linux-user
 yum-utils
-gnome-tweak-tool
-gnome-shell-extension-dash-to-dock
 
 zsh
 fish
