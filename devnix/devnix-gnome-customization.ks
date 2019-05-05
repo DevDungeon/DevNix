@@ -7,16 +7,7 @@ dconf-editor
 %end
 
 
-%post --nochroot --erroronfail
 
-# Copy wallpaper and logos over
-mkdir -p $INSTALL_ROOT/usr/local/share/devnix/backgrounds
-mkdir -p $INSTALL_ROOT/usr/local/share/devnix/logos
-cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/devnix/backgrounds/wallpaper.png
-cp resources/logos/* $INSTALL_ROOT/usr/local/share/devnix/logos/
-cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
-
-%end
 
 
 %post  --erroronfail
@@ -31,7 +22,7 @@ EOF
 # https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
 cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
 [org/gnome/shell]
-favorite-apps=['gedit.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Boxes.desktop', 'gnome-system-monitor.desktop', 'anaconda.desktop']
+favorite-apps=['gedit.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Boxes.desktop', 'gnome-system-monitor.desktop']
 FOE
 
 
@@ -47,27 +38,6 @@ cat > /etc/dconf/db/local.d/00-keymaps <<FOE
 [org/gnome/desktop/input-sources]
 xkb-options=['caps:escape']
 FOE
-
-## Backgrounds
-# https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
-cat > /etc/dconf/db/local.d/00-backgrounds <<FOE
-## Desktop wallpaper
-[org/gnome/desktop/background]
-picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
-picture-options='stretched'
-primary-color='000000'
-secondary-color='333333'
-
-## Login screen logo
-[org/gnome/login-screen]
-# Originals /usr/share/pixmaps/fedora-gdm-logo.png # 151x48
-logo='/usr/local/share/devnix/logos/devnix_800px.png'
-
-## Lock screen/screensaver image
-[org/gnome/desktop/screensaver]
-picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
-FOE
-
 
 ## Other preferences
 cat > /etc/dconf/db/local.d/00-misc <<FOE

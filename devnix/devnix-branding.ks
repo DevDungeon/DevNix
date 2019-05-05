@@ -17,10 +17,46 @@ generic-release-notes
 %end
 
 
-%post
+%post --nochroot --erroronfail
+# Copy wallpaper and logos over
+mkdir -p $INSTALL_ROOT/usr/local/share/devnix/backgrounds
+mkdir -p $INSTALL_ROOT/usr/local/share/devnix/logos
+cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/devnix/backgrounds/wallpaper.png
+cp resources/logos/* $INSTALL_ROOT/usr/local/share/devnix/logos/
+#cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
+%end
+
+
+
+
+%post --erroronfail
+
+## Backgrounds https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
+cat > /etc/dconf/db/local.d/00-backgrounds <<FOE
+## Desktop wallpaper
+[org/gnome/desktop/background]
+picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
+picture-options='stretched'
+primary-color='000000'
+secondary-color='333333'
+
+## Login screen logo
+[org/gnome/login-screen]
+# Originals /usr/share/pixmaps/fedora-gdm-logo.png # 151x48
+logo='/usr/local/share/devnix/logos/devnix_800px.png'
+
+## Lock screen/screensaver image
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
+FOE
+
+dconf update
+
+
 
 echo "DevNix" > /etc/system-release
 #echo "DevNix" > /etc/issue
+# sed -i s/Fedora/DevNix/g /etc/issue
 
 
 # /usr/share/doc/generic-release-notes
@@ -42,11 +78,11 @@ VERSION="1 (Workstation Edition)"
 ID=devnix
 VERSION_ID=1.0
 VERSION_CODENAME="Primo"
-PLATFORM_ID="platform:devnix1"
+PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
 ANSI_COLOR="0;34"
 LOGO=devnix-lettermark
-CPE_NAME="cpe:/o:devdungeon:devnix:1"
+CPE_NAME="cpe:/o:fedoraproject:fedora:30"
 HOME_URL="https://www.devdungeon.com/devnix"
 DOCUMENTATION_URL="https://www.devdungeon.com/devnix"
 SUPPORT_URL="https://www.devdungeon.com/devnix"

@@ -9,12 +9,12 @@
 # is the desired build target anyway.
 #-bcm283x-firmware
 
--simple-scan
--gnome-contacts
--cheese
--gnome-maps
--gnome-photos
--totem
+#-simple-scan
+#-gnome-contacts
+#-cheese
+#-gnome-maps
+#-gnome-photos
+#-totem
 
 util-linux-user
 yum-utils
