@@ -9,9 +9,15 @@
 # is the desired build target anyway.
 #-bcm283x-firmware
 
+-simple-scan
+-gnome-contacts
+-cheese
+-gnome-maps
+-gnome-photos
 
 util-linux-user
 yum-utils
+dconf-editor
 
 # for pngtopnm to make .lss files
 netpbm-progs

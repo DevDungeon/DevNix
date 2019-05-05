@@ -19,14 +19,8 @@ generic-release-notes
 
 %post
 
-#echo "DevNix" > /etc/system-release
+echo "DevNix" > /etc/system-release
 #echo "DevNix" > /etc/issue
-
-# Installer Icons
-#/usr/share/icons/hicolor/scalable/apps
-#/anaconda.svg #48x48
-#fedora-logo-icon.svg #220x254
-#fedora-logo-sprite.svg #220x254
 
 
 # /usr/share/doc/generic-release-notes
@@ -47,11 +41,11 @@ NAME=DevNix
 VERSION="1 (Workstation Edition)"
 ID=devnix
 VERSION_ID=1.0
-VERSION_CODENAME="alpha"
+VERSION_CODENAME="Primo"
 PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
 ANSI_COLOR="0;34"
-LOGO=devnix-icon
+LOGO=devnix-lettermark
 CPE_NAME="cpe:/o:fedoraproject:fedora:30"
 HOME_URL="https://www.devdungeon.com/devnix"
 DOCUMENTATION_URL="https://www.devdungeon.com/devnix"
@@ -149,8 +143,23 @@ cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/fi
 # Change the name in the installer popup
 sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome
 sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.desktop
+
 # Change install button if desired
 #$INSTALL_ROOT/usr/share/anaconda/gnome/install-button.png
 
+
+
+## Installer Icons
+
+#/usr/share/icons/hicolor/scalable/apps
+cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
+cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
+rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
+
+# Change /usr/share/icons/hicolor/scalable/apps/
+#/anaconda.svg #48x48
+#fedora-logo-icon.svg #220x254
+#fedora-logo-sprite.svg #220x254
+# start-here.svg
 
 %end

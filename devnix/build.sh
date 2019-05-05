@@ -1,4 +1,4 @@
 #!/bin/bash
-
-sudo livecd-creator devnix.ks --fslabel=DevNix-Live-x86_64
+# sudo yum install livecd-tools
+sudo livecd-creator devnix.ks --fslabel=DevNix-Workstation-x86_64
 

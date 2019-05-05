@@ -1,18 +1,22 @@
 # TODO
 
-- Create automated build systems that will automatically update my custom RPM packages and create the .iso files
-- Create RPM packages for vscode/jetbrains/zap/tcpnull/ip2kml/etc builds
-- create an arm version that I can use on Pi
-- create a lighter weight server/cli version that doesn't have desktop that I can use on laptop vms and vps servers
 - create a figlet motd
-- devdungeon github repos in /usr/local/share or user home dir upon creation
-- Put together a video playlist on how to customize and how it's built
-    - How to create desktop notifications
-    - Create a systray icon
-    - Run program on startup
-    - Create a service
-    - create rpm packages
-    - change application list/grouping
-    - how to delete unwanted apps
-- Make a devnix man page
 - Update grub bootloader
+- There is still some anaconda/hotdog loader images around in icons dir
+- update favorites menu
+
+['firefox.desktop', 'rhythmbox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Screenshot.desktop']
+
+- way to make it say "Live" when botting disk and not in grub?
+- Add minimize button to toolbars
+- Add / to nautilus favorites
+- Shrink default icon size in nautilus
+- HAve it show hidden files by default in nautilus
+- Add Boxes to favorites - remove nautilus - remove gedit
+- Add vscode
+- add jetbrains toolbox
+- vwmare player??
+- github desktop? -gitg?
+- Finish the gdm login logo instead of whole wallpaper
+- change /usr/shar/epixmaps/bootloader/fedora.icns (boot images?)
+- Change /usr/share/plymouth/plymouthd.defaults them
