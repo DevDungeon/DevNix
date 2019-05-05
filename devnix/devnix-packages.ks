@@ -14,10 +14,10 @@
 -cheese
 -gnome-maps
 -gnome-photos
+-totem
 
 util-linux-user
 yum-utils
-dconf-editor
 
 # for pngtopnm to make .lss files
 netpbm-progs
@@ -141,7 +141,6 @@ monotone
 myrepos
 nemiver
 quilt
-rapidsvn
 rcs
 robodoc
 scanmem
