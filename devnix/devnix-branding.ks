@@ -132,12 +132,12 @@ cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash
 cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
 
 # TODO do this once and store the .lss in repo # yum install netpbm-progs syslinux-perl
-pngtopnm $INSTALL_ROOT/usr/share/anaconda/boot/splash.png | ppmtolss16 > $INSTALL_ROOT/usr/share/anaconda/boot/splash.lss
+#pngtopnm $INSTALL_ROOT/usr/share/anaconda/boot/splash.png | ppmtolss16 > $INSTALL_ROOT/usr/share/anaconda/boot/splash.lss
 
 
-mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
-cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
-cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+#mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
+#cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+#cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
 
 
 # Change the name in the installer popup
@@ -154,6 +154,7 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.d
 #/usr/share/icons/hicolor/scalable/apps
 cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
 cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
+
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
 
 # Change /usr/share/icons/hicolor/scalable/apps/

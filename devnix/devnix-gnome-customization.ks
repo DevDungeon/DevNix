@@ -10,10 +10,12 @@ dconf-editor
 %post --nochroot --erroronfail
 
 # Copy wallpaper and logos over
-mkdir -p $INSTALL_ROOT/usr/local/share/devnix/{backgrounds,logos}
+mkdir -p $INSTALL_ROOT/usr/local/share/devnix/backgrounds
+mkdir -p $INSTALL_ROOT/usr/local/share/devnix/logos
 cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/devnix/backgrounds/wallpaper.png
 cp resources/logos/* $INSTALL_ROOT/usr/local/share/devnix/logos/
-#cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
+cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
+
 %end
 
 
@@ -64,7 +66,6 @@ logo='/usr/local/share/devnix/logos/devnix_800px.png'
 ## Lock screen/screensaver image
 [org/gnome/desktop/screensaver]
 picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
-picture-options='stretched'
 FOE
 
 
