@@ -6,7 +6,7 @@
 -fedora-logos
 -fedora-release
 -fedora-release-notes
-#-fedora-release-workstation
+-fedora-release-workstation
 #-system-release
 generic-release
 generic-logos
@@ -24,6 +24,16 @@ echo "DevNix" > /etc/system-release
 
 # /usr/share/doc/generic-release-notes
 # /usr/share/doc/generic-release-notes/README.Generic-Release-Notes
+mkdir -p /usr/share/licenses/devnix-release
+cat > /usr/share/licenses/devnix-release/README.md' <<FOE
+# DevNix Release Information
+
+## Contact
+
+nanodano@devdungeon.com
+
+FOE
+
 
 cat > /usr/lib/os-release <<FOE
 NAME=DevNix

@@ -1,6 +1,6 @@
 %include ../fedora-live-workstation.ks
-#%include devnix-packages.ks
-#%include devnix-fonts.ks
+%include devnix-packages.ks
+%include devnix-fonts.ks
 %include devnix-branding.ks
 
 # Override disk size in fedora-live-workstation.ks so it
@@ -49,7 +49,7 @@ FOE
 # https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
 cat > /etc/dconf/db/local.d/00-extensions <<FOE
 [org/gnome/shell]
-enabled-extensions=[['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
 FOE
 # TODO include gnome-shell-extension-dash-to-dock as turned on
 # dconf read /org/gnome/shell/enabled-extensions
@@ -106,8 +106,8 @@ cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash
 cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
 
 mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
-cp resources/first_boot/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
-cp resources/first_boot/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
+cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
 
 %end
 
