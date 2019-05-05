@@ -28,14 +28,14 @@ emacs
 links
 lynx
 firefox
-chromium
-filezilla
-thunderbird
+#chromium
+#filezilla
+#thunderbird
 
 #tomcat? httpd? nginx?
 
-arduino
-fritzing
+#arduino
+#fritzing
 
 gpg
 keepass
@@ -60,20 +60,20 @@ java-1.8.0-openjdk-src
 java-1.8.0-openjdk-javadoc
 
 # Maybe too much space
-java-11-openjdk
-java-11-openjdk-headless
-java-11-openjdk-devel
-java-11-openjdk-src
-java-11-openjdk-javadoc
+#java-11-openjdk
+#java-11-openjdk-headless
+#java-11-openjdk-devel
+#java-11-openjdk-src
+#java-11-openjdk-javadoc
 
 # MariaDB (Mysql) client+server
-mariadb-server
-postgresql-server
+#mariadb-server
+#postgresql-server
 sqlite
 
-ant
-maven
-gradle
+#ant
+#maven
+#gradle
 
 # Docker breaks the auto login on livecd
 #docker
@@ -82,11 +82,11 @@ gradle
 pidgin-otr
 
 # CLI apps
-irssi
-rtorrent
-mutt
-vifm
-mc
+#irssi
+#rtorrent
+#mutt
+#vifm
+#mc
 
 # Dev tools
 gcc
@@ -142,20 +142,20 @@ utrac
 gitg
 manedit
 
-#qgit
-#git-cola
-#gambas3-ide
-
 
 # security tools
 
+
+#nmap
+#wireshark
+#libpcap
+#libpcap-devel
+#bind-utils
+#traceroute
+
+
+
 #amass
-nmap
-wireshark
-libpcap
-libpcap-devel
-bind-utils
-traceroute
 #nslookup
 #dig
 #wireshark

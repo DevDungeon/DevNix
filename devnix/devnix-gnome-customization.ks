@@ -45,7 +45,7 @@ FOE
 
 ## Set wallpaper
 # https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
-cat > /etc/dconf/db/local.d/00-wallpaper<<FOE
+cat > /etc/dconf/db/local.d/00-wallpaperi <<FOE
 [org/gnome/desktop/background]
 picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 picture-options='scaled'
@@ -53,5 +53,6 @@ primary-color='000000'
 secondary-color='333333'
 FOE
 
+dconf update
 
 %end

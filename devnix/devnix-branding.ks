@@ -138,4 +138,11 @@ mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
 cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
 cp resources/first_boot/themes/devnix/workstation.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
 
+
+# Change the name in the installer popup
+sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome
+sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.desktop
+# Change install button if desired
+#$INSTALL_ROOT/usr/share/anaconda/gnome/install-button.png
+
 %end
