@@ -60,8 +60,11 @@ use-tree-view=true
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
-show-hidden-files=true
 executable-text-activation='ask'
+
+[org/gtk/settings/file-chooser]
+show-hidden=true
+sort-directories-first=true
 
 [org/gnome/desktop/interface]
 clock-format='12h'
