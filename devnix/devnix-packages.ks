@@ -24,6 +24,7 @@ netpbm-progs
 # for ppmtolss16 to make .lss files
 syslinux
 syslinux-perl
+livecd-tools
 
 zsh
 #fish
