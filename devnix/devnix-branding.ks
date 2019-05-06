@@ -93,6 +93,12 @@ VARIANT_ID=workstation
 FOE
 
 
+#Packages
+#anaconda
+#anaconda-install-env-deps
+#anaconda-live
+#@anaconda-tool
+#initial-setup
 
 # /usr/share/anaconda/boot/splash.png
 # /usr/share/anaconda/boot/syslinux-splash.png

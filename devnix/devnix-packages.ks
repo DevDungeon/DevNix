@@ -22,6 +22,7 @@ yum-utils
 # for pngtopnm to make .lss files
 netpbm-progs
 # for ppmtolss16 to make .lss files
+syslinux
 syslinux-perl
 
 zsh
@@ -110,54 +111,49 @@ autoconf
 pkgconfig
 
 # "Development Tools"
-gettext
-diffstat
-doxygen
-git
-patch
-patchutils
-subversion
-systemtap
-archmage
-buildbot
-bzr
-colordiff
-cvs
-cvs2cl
-cvsgraph
-cvsps
-darcs
-dejagnu
-expect
-git-annex
-
-git2cl
-gtranslator
-highlight
-lcov
-meld
-mercurial
-monotone
-myrepos
-nemiver
-quilt
-rcs
-robodoc
-scanmem
-subunit
-svn2cl
-tig
-tkcvs
-#tortoisehg
-translate-toolkit
-utrac
-
-gitg
-manedit
-
+# gettext
+# diffstat
+# doxygen
+# git
+# patch
+# patchutils
+# subversion
+# systemtap
+# archmage
+# buildbot
+# bzr
+# colordiff
+# cvs
+# cvs2cl
+# cvsgraph
+# cvsps
+# darcs
+# dejagnu
+# expect
+# git-annex
+# git2cl
+# gtranslator
+# highlight
+# lcov
+# meld
+# mercurial
+# monotone
+# myrepos
+# nemiver
+# quilt
+# rcs
+# robodoc
+# scanmem
+# subunit
+# svn2cl
+# tig
+# #tortoisehg
+# translate-toolkit
+# utrac
+# gitg
+# manedit
 
 # security tools
-
 
 #nmap
 #wireshark
