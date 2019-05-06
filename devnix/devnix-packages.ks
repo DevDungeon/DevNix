@@ -9,12 +9,12 @@
 # is the desired build target anyway.
 #-bcm283x-firmware
 
-#-simple-scan
-#-gnome-contacts
-#-cheese
-#-gnome-maps
-#-gnome-photos
-#-totem
+-simple-scan
+-gnome-contacts
+-cheese
+-gnome-maps
+-gnome-photos
+-totem
 
 util-linux-user
 yum-utils
@@ -33,14 +33,14 @@ vim
 #neovim
 #gvim
 
-tmux
+#tmux
 
-git
+#git
 #emacs
 
 #links
 #lynx
-firefox
+#firefox
 #chromium
 #filezilla
 #thunderbird
@@ -85,74 +85,54 @@ firefox
 # MariaDB (Mysql) client+server
 #mariadb-server
 #postgresql-server
-sqlite
+#sqlite
 
 #ant
 #maven
 #gradle
 
-# Docker breaks the auto login on livecd
+## Docker breaks the auto login on livecd
 #docker
 
-# Chat
+## Chat
 #pidgin-otr
 
-# CLI apps
+## CLI apps
 #irssi
 #rtorrent
 #mutt
 #vifm
 #mc
 
-# Dev tools
-gcc
-gcc-c++
-make
-autoconf
-pkgconfig
+## Dev tools
+#gcc
+#gcc-c++
+#make
+#autoconf
+#pkgconfig
 
-# "Development Tools"
-# gettext
-# diffstat
-# doxygen
-# git
-# patch
-# patchutils
-# subversion
-# systemtap
-# archmage
-# buildbot
-# bzr
-# colordiff
-# cvs
-# cvs2cl
-# cvsgraph
-# cvsps
-# darcs
-# dejagnu
-# expect
-# git-annex
-# git2cl
-# gtranslator
-# highlight
-# lcov
-# meld
-# mercurial
-# monotone
-# myrepos
-# nemiver
-# quilt
-# rcs
-# robodoc
-# scanmem
-# subunit
-# svn2cl
-# tig
-# #tortoisehg
-# translate-toolkit
-# utrac
-# gitg
-# manedit
+## "Development Tools"
+#gettext
+#diffstat
+#doxygen
+#git
+#patch
+#patchutils
+#subversion
+#bzr
+#colordiff
+#cvs
+#expect
+#highlight
+#lcov
+#meld
+#mercurial
+#nemiver
+#rcs
+#robodoc
+#scanmem
+#gitg
+#manedit
 
 # security tools
 
@@ -166,7 +146,6 @@ pkgconfig
 
 
 #amass
-#nslookup
 #dig
 #wireshark
 #sqlmap
