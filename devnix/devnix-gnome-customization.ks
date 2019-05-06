@@ -22,7 +22,7 @@ EOF
 # https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
 cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'anaconda.desktop']
 FOE
 
 

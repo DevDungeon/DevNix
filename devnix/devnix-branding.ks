@@ -29,8 +29,13 @@ cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.
 
 
 
-
 %post --erroronfail
+
+# Turns off the "Pre-release/Testing" warning on installer
+cat > /.buildstamp <<EOF
+[Main]
+IsFinal=true
+EOF
 
 ## Backgrounds https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
 cat > /etc/dconf/db/local.d/00-backgrounds <<FOE
@@ -77,9 +82,9 @@ cat > /usr/lib/os-release <<FOE
 NAME=DevNix
 VERSION="1 (Workstation Edition)"
 ID=devnix
-VERSION_ID=1.0
-OS=$NAME
-VER=$VERSION_ID
+VERSION_ID=1
+OS=DevNix
+VER=1
 VERSION_CODENAME="Primo"
 PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
@@ -93,6 +98,10 @@ BUG_REPORT_URL="https://www.devdungeon.com/devnix"
 PRIVACY_POLICY_URL="https://www.devdungeon.com/content/privacy-policy"
 VARIANT="Workstation Edition"
 VARIANT_ID=workstation
+FOE
+
+cat > /usr/lib/fedora-release <<FOE
+DevNix release 1
 FOE
 
 
@@ -195,9 +204,18 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.d
 
 
 ## Installer Icons
-cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
-cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
-#rm $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
+cp resources/devnix-lettermark-64.png $INSTALL_ROOT/usr/share/icons/hicolor/64x64/apps/anaconda.png
+cp resources/devnix-lettermark-64.png $INSTALL_ROOT/usr/share/icons/hicolor/64x64/apps/devnix-lettermark.png
+
+cp resources/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/anaconda.png
+cp resources/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/devnix-lettermark.png
+
+cp resources/devnix-lettermark-48.png $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
+cp resources/devnix-lettermark-48.png $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/devnix-lettermark.png
+
+cp resources/devnix-lettermark-256.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
+cp resources/devnix-lettermark-256.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
+
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
 # Change /usr/share/icons/hicolor/scalable/apps/
 #/anaconda.svg #48x48
