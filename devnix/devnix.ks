@@ -10,8 +10,8 @@
 # has enough room to build. Does not indicate size of final iso
 part / --size 12000
 
-reboot --eject
-firstboot --enable --reconfig
+#reboot --eject
+#firstboot --enable --reconfig
 
 %post --erroronfail
 
