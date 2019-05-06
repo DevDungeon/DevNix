@@ -9,12 +9,12 @@
 # is the desired build target anyway.
 #-bcm283x-firmware
 
-#-simple-scan
-#-gnome-contacts
-#-cheese
-#-gnome-maps
-#-gnome-photos
-#-totem
+-simple-scan
+-gnome-contacts
+-cheese
+-gnome-maps
+-gnome-photos
+-totem
 
 util-linux-user
 yum-utils
@@ -22,7 +22,7 @@ yum-utils
 # for pngtopnm to make .lss files
 netpbm-progs
 # for ppmtolss16 to make .lss files
-#syslinux
+syslinux
 syslinux-perl
 
 zsh
@@ -32,14 +32,14 @@ vim
 #neovim
 #gvim
 
-tmux
+#tmux
 
-git
+#git
 #emacs
 
 #links
 #lynx
-firefox
+#firefox
 #chromium
 #filezilla
 #thunderbird
@@ -68,11 +68,11 @@ firefox
 
 
 
-java-1.8.0-openjdk
-java-1.8.0-openjdk-devel
-java-1.8.0-openjdk-openjfx
-java-1.8.0-openjdk-src
-java-1.8.0-openjdk-javadoc
+#java-1.8.0-openjdk
+#java-1.8.0-openjdk-devel
+#java-1.8.0-openjdk-openjfx
+#java-1.8.0-openjdk-src
+#java-1.8.0-openjdk-javadoc
 
 # Maybe too much space
 #java-11-openjdk
@@ -84,74 +84,54 @@ java-1.8.0-openjdk-javadoc
 # MariaDB (Mysql) client+server
 #mariadb-server
 #postgresql-server
-sqlite
+#sqlite
 
 #ant
 #maven
 #gradle
 
-# Docker breaks the auto login on livecd
+## Docker breaks the auto login on livecd
 #docker
 
-# Chat
+## Chat
 #pidgin-otr
 
-# CLI apps
+## CLI apps
 #irssi
 #rtorrent
 #mutt
 #vifm
 #mc
 
-# Dev tools
-gcc
-gcc-c++
-make
-autoconf
-pkgconfig
+## Dev tools
+#gcc
+#gcc-c++
+#make
+#autoconf
+#pkgconfig
 
-# "Development Tools"
-gettext
-diffstat
-doxygen
-git
-patch
-patchutils
-subversion
-systemtap
-archmage
-buildbot
-bzr
-colordiff
-cvs
-cvs2cl
-cvsgraph
-cvsps
-darcs
-dejagnu
-expect
-git-annex
-git2cl
-gtranslator
-highlight
-lcov
-meld
-mercurial
-monotone
-myrepos
-nemiver
-quilt
-rcs
-robodoc
-scanmem
-subunit
-svn2cl
-tig
-#tortoisehg
-# translate-toolkit
-# utrac
-gitg
-manedit
+## "Development Tools"
+#gettext
+#diffstat
+#doxygen
+#git
+#patch
+#patchutils
+#subversion
+#bzr
+#colordiff
+#cvs
+#expect
+#highlight
+#lcov
+#meld
+#mercurial
+#nemiver
+#rcs
+#robodoc
+#scanmem
+#gitg
+#manedit
 
 # security tools
 
@@ -165,7 +145,6 @@ manedit
 
 
 #amass
-#nslookup
 #dig
 #wireshark
 #sqlmap

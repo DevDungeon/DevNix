@@ -197,7 +197,7 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.d
 ## Installer Icons
 cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
 cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
-rm $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
+#rm $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
 # Change /usr/share/icons/hicolor/scalable/apps/
 #/anaconda.svg #48x48
