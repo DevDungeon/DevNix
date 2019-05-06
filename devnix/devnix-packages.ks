@@ -22,7 +22,7 @@ yum-utils
 # for pngtopnm to make .lss files
 netpbm-progs
 # for ppmtolss16 to make .lss files
-syslinux
+#syslinux
 syslinux-perl
 
 zsh
@@ -68,11 +68,11 @@ firefox
 
 
 
-#java-1.8.0-openjdk
-#java-1.8.0-openjdk-devel
-#java-1.8.0-openjdk-openjfx
-#java-1.8.0-openjdk-src
-#java-1.8.0-openjdk-javadoc
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
+java-1.8.0-openjdk-openjfx
+java-1.8.0-openjdk-src
+java-1.8.0-openjdk-javadoc
 
 # Maybe too much space
 #java-11-openjdk
@@ -111,47 +111,47 @@ autoconf
 pkgconfig
 
 # "Development Tools"
-# gettext
-# diffstat
-# doxygen
-# git
-# patch
-# patchutils
-# subversion
-# systemtap
-# archmage
-# buildbot
-# bzr
-# colordiff
-# cvs
-# cvs2cl
-# cvsgraph
-# cvsps
-# darcs
-# dejagnu
-# expect
-# git-annex
-# git2cl
-# gtranslator
-# highlight
-# lcov
-# meld
-# mercurial
-# monotone
-# myrepos
-# nemiver
-# quilt
-# rcs
-# robodoc
-# scanmem
-# subunit
-# svn2cl
-# tig
-# #tortoisehg
+gettext
+diffstat
+doxygen
+git
+patch
+patchutils
+subversion
+systemtap
+archmage
+buildbot
+bzr
+colordiff
+cvs
+cvs2cl
+cvsgraph
+cvsps
+darcs
+dejagnu
+expect
+git-annex
+git2cl
+gtranslator
+highlight
+lcov
+meld
+mercurial
+monotone
+myrepos
+nemiver
+quilt
+rcs
+robodoc
+scanmem
+subunit
+svn2cl
+tig
+#tortoisehg
 # translate-toolkit
 # utrac
-# gitg
-# manedit
+gitg
+manedit
 
 # security tools
 

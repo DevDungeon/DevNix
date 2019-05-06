@@ -11,3 +11,7 @@
 - github desktop? -gitg?
 - change /usr/shar/epixmaps/bootloader/fedora.icns (boot images?)
 - Change /usr/share/plymouth/plymouthd.defaults them
+
+
+security and proxy tools
+grouping applications

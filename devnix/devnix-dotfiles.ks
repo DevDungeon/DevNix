@@ -1,6 +1,5 @@
 %post --nochroot --erroronfail
 
-
 # Add .vimrc, .zshrc, .zshrc.local, and .ssh/config in all user home dirs
 cp resources/vimrc $INSTALL_ROOT/etc/skel/.vimrc
 cp resources/zshrc $INSTALL_ROOT/etc/skel/.zshrc

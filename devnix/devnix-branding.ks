@@ -19,11 +19,12 @@ generic-release-notes
 
 %post --nochroot --erroronfail
 # Copy wallpaper and logos over
-mkdir -p $INSTALL_ROOT/usr/local/share/devnix/backgrounds
+mkdir -p $INSTALL_ROOT/usr/local/share/backgrounds
+cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/backgrounds/wallpaper.png
 mkdir -p $INSTALL_ROOT/usr/local/share/devnix/logos
-cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/devnix/backgrounds/wallpaper.png
-cp resources/logos/* $INSTALL_ROOT/usr/local/share/devnix/logos/
-#cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
+cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/local/share/devnix/logos/
+cp resources/logos/devnix_2000px.png $INSTALL_ROOT/usr/local/share/devnix/logos/
+cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
 %end
 
 
@@ -35,19 +36,19 @@ cp resources/logos/* $INSTALL_ROOT/usr/local/share/devnix/logos/
 cat > /etc/dconf/db/local.d/00-backgrounds <<FOE
 ## Desktop wallpaper
 [org/gnome/desktop/background]
-picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 picture-options='stretched'
 primary-color='000000'
 secondary-color='333333'
 
 ## Login screen logo
-[org/gnome/login-screen]
 # Originals /usr/share/pixmaps/fedora-gdm-logo.png # 151x48
+[org/gnome/login-screen]
 logo='/usr/local/share/devnix/logos/devnix_800px.png'
 
 ## Lock screen/screensaver image
 [org/gnome/desktop/screensaver]
-picture-uri='file:///usr/local/share/devnix/backgrounds/wallpaper.png'
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 FOE
 
 dconf update
@@ -77,6 +78,8 @@ NAME=DevNix
 VERSION="1 (Workstation Edition)"
 ID=devnix
 VERSION_ID=1.0
+OS=$NAME
+VER=$VERSION_ID
 VERSION_CODENAME="Primo"
 PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
@@ -192,13 +195,10 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.d
 
 
 ## Installer Icons
-
-#/usr/share/icons/hicolor/scalable/apps
 cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
 cp resources/devnix-lettermark.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
-
+rm $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
-
 # Change /usr/share/icons/hicolor/scalable/apps/
 #/anaconda.svg #48x48
 #fedora-logo-icon.svg #220x254
