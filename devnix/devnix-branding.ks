@@ -173,9 +173,9 @@ FOE
 # Set /etc/system-release to DevNix name to replace fedora
 # Change icon https://bugzilla.redhat.com/show_bug.cgi?id=464120
 
-mkdir -p $INSTALL_ROOT/usr/share/anaconda/boot
-cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/boot/splash.png
-cp resources/anaconda/syslinux-splash.png $INSTALL_ROOT/usr/share/anaconda/boot/syslinux-splash.png
+#mkdir -p $INSTALL_ROOT/usr/share/anaconda/boot
+#cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/boot/splash.png
+#cp resources/anaconda/syslinux-splash.png $INSTALL_ROOT/usr/share/anaconda/boot/syslinux-splash.png
 
 mkdir -p $INSTALL_ROOT/usr/share/anaconda/pixmaps
 cp resources/anaconda/anaconda_header.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/anaconda_header.png
@@ -204,23 +204,42 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.d
 
 
 ## Installer Icons
-cp resources/devnix-lettermark-64.png $INSTALL_ROOT/usr/share/icons/hicolor/64x64/apps/anaconda.png
-cp resources/devnix-lettermark-64.png $INSTALL_ROOT/usr/share/icons/hicolor/64x64/apps/devnix-lettermark.png
-
-cp resources/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/anaconda.png
-cp resources/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/devnix-lettermark.png
-
-cp resources/devnix-lettermark-48.png $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
-cp resources/devnix-lettermark-48.png $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/devnix-lettermark.png
-
-cp resources/devnix-lettermark-256.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
-cp resources/devnix-lettermark-256.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-16.png $INSTALL_ROOT/usr/share/icons/hicolor/16x16/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-22.png $INSTALL_ROOT/usr/share/icons/hicolor/22x22/apps/anaconda.png
+cp resources/icons/devnix-lettermark-16.png $INSTALL_ROOT/usr/share/icons/hicolor/16x16/apps/anaconda.png
+cp resources/icons/devnix-lettermark-22.png $INSTALL_ROOT/usr/share/icons/hicolor/22x22/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-24.png $INSTALL_ROOT/usr/share/icons/hicolor/24x24/apps/anaconda.png
+cp resources/icons/devnix-lettermark-24.png $INSTALL_ROOT/usr/share/icons/hicolor/24x24/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-32.png $INSTALL_ROOT/usr/share/icons/hicolor/32x32/apps/anaconda.png
+cp resources/icons/devnix-lettermark-32.png $INSTALL_ROOT/usr/share/icons/hicolor/32x32/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-36.png $INSTALL_ROOT/usr/share/icons/hicolor/36x36/apps/anaconda.png
+cp resources/icons/devnix-lettermark-36.png $INSTALL_ROOT/usr/share/icons/hicolor/36x36/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-48.png $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/anaconda.png
+cp resources/icons/devnix-lettermark-48.png $INSTALL_ROOT/usr/share/icons/hicolor/48x48/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-64.png $INSTALL_ROOT/usr/share/icons/hicolor/64x64/apps/anaconda.png
+cp resources/icons/devnix-lettermark-64.png $INSTALL_ROOT/usr/share/icons/hicolor/64x64/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-72.png $INSTALL_ROOT/usr/share/icons/hicolor/72x72/apps/anaconda.png
+cp resources/icons/devnix-lettermark-72.png $INSTALL_ROOT/usr/share/icons/hicolor/72x72/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-96.png $INSTALL_ROOT/usr/share/icons/hicolor/96x96/apps/anaconda.png
+cp resources/icons/devnix-lettermark-96.png $INSTALL_ROOT/usr/share/icons/hicolor/96x96/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-128.png $INSTALL_ROOT/usr/share/icons/hicolor/128x128/apps/anaconda.png
+cp resources/icons/devnix-lettermark-128.png $INSTALL_ROOT/usr/share/icons/hicolor/128x128/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-192.png $INSTALL_ROOT/usr/share/icons/hicolor/192x192/apps/anaconda.png
+cp resources/icons/devnix-lettermark-192.png $INSTALL_ROOT/usr/share/icons/hicolor/192x192/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-256.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/anaconda.png
+cp resources/icons/devnix-lettermark-256.png $INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-480.png $INSTALL_ROOT/usr/share/icons/hicolor/480x480/apps/anaconda.png
+cp resources/icons/devnix-lettermark-480.png $INSTALL_ROOT/usr/share/icons/hicolor/480x480/apps/devnix-lettermark.png
+cp resources/icons/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/anaconda.png
+cp resources/icons/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/devnix-lettermark.png
 
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
+
 # Change /usr/share/icons/hicolor/scalable/apps/
-#/anaconda.svg #48x48
 #fedora-logo-icon.svg #220x254
 #fedora-logo-sprite.svg #220x254
 # start-here.svg
+
+gtk-update-icon-cache $INSTALL_ROOT/usr/share/icons/hicolor
 
 %end

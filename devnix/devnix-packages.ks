@@ -19,6 +19,7 @@
 util-linux-user
 yum-utils
 
+## Stuff for building the images
 # for pngtopnm to make .lss files
 netpbm-progs
 # for ppmtolss16 to make .lss files
@@ -26,26 +27,32 @@ syslinux
 syslinux-perl
 livecd-tools
 
+## Shells
 zsh
 fish
 
+## Editors
 vim
 neovim
 gvim
+#nano
+#emacs
 
 tmux
 screen
 
 git
-#emacs
 
 links
 lynx
 firefox
 chromium
+
 filezilla
 thunderbird
+
 gnome-boxes
+virt-manager
 gimp
 kolourpaint
 
@@ -67,29 +74,26 @@ libxkbfile-devel
 libsecret-devel
 
 
-
+## Java stuff
 java-1.8.0-openjdk
 java-1.8.0-openjdk-devel
 java-1.8.0-openjdk-openjfx
 java-1.8.0-openjdk-openjfx-devel
 java-1.8.0-openjdk-src
 java-1.8.0-openjdk-javadoc
-
-# Maybe too much space
+ant
+maven
+gradle
 #java-11-openjdk
 #java-11-openjdk-headless
 #java-11-openjdk-devel
 #java-11-openjdk-src
 #java-11-openjdk-javadoc
 
-# MariaDB (Mysql) client+server
+## Databases
 mariadb-server
 postgresql-server
 sqlite
-
-ant
-maven
-gradle
 
 ## Docker breaks the auto login on livecd
 #docker
@@ -105,36 +109,35 @@ vifm
 mc
 
 ## Dev tools
-#gcc
-#gcc-c++
-#make
-#autoconf
-#pkgconfig
+gcc
+gcc-c++
+make
+autoconf
+pkgconfig
 
 ## "Development Tools"
-#gettext
-#diffstat
-#doxygen
-#git
-#patch
-#patchutils
-#subversion
-#bzr
-#colordiff
-#cvs
-#expect
-#highlight
-#lcov
-#meld
-#mercurial
-#nemiver
-#rcs
-#robodoc
-#scanmem
-#gitg
-#manedit
+gettext
+diffstat
+doxygen
+patch
+patchutils
+subversion
+bzr
+colordiff
+cvs
+expect
+highlight
+lcov
+meld
+mercurial
+nemiver
+rcs
+robodoc
+scanmem
+gitg
+manedit
 
-# security tools
+## Security tools
 
 nmap
 wireshark
@@ -143,16 +146,14 @@ libpcap-devel
 bind-utils
 traceroute
 
-
-
 #amass
 #dig
-#wireshark
+wireshark
 #sqlmap
 #armitage
 # pentestframework/ptf/metasploit?
 # ida/olly?
-# gdb
+gdb
 # hashcat/jtr
 # zap
 # fiddler
@@ -160,13 +161,11 @@ traceroute
 
 qt5-designer
 python3-qt5-devel
-
+python3-docutils
+python3-sphinx
+python3-sphinx_rtd_theme
 python-devel
 ruby-devel
-jruby-devel
-#jruby-doc
-#python3-doc
-#ruby-doc
 python3-idle
 rubygem-pry
 rubygem-tk
@@ -174,7 +173,6 @@ rubygem-tk
 httpd
 tomcat
 nginx
-
 
 ansible
 jenkins

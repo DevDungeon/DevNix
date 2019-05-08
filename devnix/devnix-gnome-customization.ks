@@ -62,6 +62,7 @@ use-tree-view=true
 default-folder-viewer='list-view'
 executable-text-activation='ask'
 click-policy='single'
+show-delete-permanently=true
 
 [org/gtk/settings/file-chooser]
 show-hidden=true
