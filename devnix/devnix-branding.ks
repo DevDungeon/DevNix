@@ -101,7 +101,7 @@ VARIANT_ID=workstation
 FOE
 
 cat > /usr/lib/fedora-release <<FOE
-DevNix release 1
+DevNix release 0
 FOE
 
 

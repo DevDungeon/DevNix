@@ -14,3 +14,10 @@ mv ubuntu-font-family-0.83 $INSTALL_ROOT/usr/share/fonts
 
 %end
 
+
+%post --erroronfail
+
+# Flush font cache
+fc-cache -fv
+
+%end
