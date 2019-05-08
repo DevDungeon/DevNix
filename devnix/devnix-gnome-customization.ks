@@ -22,16 +22,53 @@ EOF
 # https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
 cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'anaconda.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'anaconda.desktop']
 FOE
+
+## Application folders
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Image']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/Office]
+apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'gnome-contacts.desktop', 'org.gnome.Calendar.desktop']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/Terminal]
+apps=['gnome-termina', 'neovim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop']
+name='Terminal'
+
+[org/gnome/desktop/app-folders/folders/Web]
+apps=['firefox.desktop', 'chromium.desktop', 'thunderbird.desktop', 'filezilla.desktop']
+name='Web'
+
+[org/gnome/desktop/app-folders/folders/Editors]
+apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop']
+name='Editors'
+
+[org/gnome/desktop/app-folders/folders/Image]
+apps=['eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'gnome-photos.desktop', 'libreoffice-draw']
+name='Image'
+
+# Electronics group
+# Settings
+# virtualization
 
 
 ## Extensions
 # https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
 cat > /etc/dconf/db/local.d/00-extensions <<FOE
 [org/gnome/shell]
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org']
 FOE
+
+## Background logo extension (background-logo@fedorahosted.org)
+[org/fedorahosted/background-logo-extension]
+logo-always-visible=true
+logo-border=20
+logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
+logo-size=7
+
 
 ## CAPS LOCK -> ESC key mapping
 cat > /etc/dconf/db/local.d/00-keymaps <<FOE

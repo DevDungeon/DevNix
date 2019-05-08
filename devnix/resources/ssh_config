@@ -3,7 +3,8 @@
 
 # Settings for all SSH connections
 Host *
-    IPQoS=throughput  # Needed to fix SSH in Fedora in VMWare
+  # Needed to fix SSH
+  IPQoS=throughput
 
 #Host sandbox # Connect using ``ssh sandbox`` or ``scp sandbox:* .``
     #HostName sandbox.local

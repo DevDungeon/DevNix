@@ -80,11 +80,11 @@ EOF
 # https://www.freedesktop.org/software/systemd/man/os-release.html
 cat > /usr/lib/os-release <<FOE
 NAME=DevNix
-VERSION="1 (Workstation Edition)"
+VERSION="0 (Workstation Edition)"
 ID=devnix
-VERSION_ID=1
+VERSION_ID=0
 OS=DevNix
-VER=1
+VER=0
 VERSION_CODENAME="Primo"
 PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
@@ -241,5 +241,12 @@ rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
 # start-here.svg
 
 gtk-update-icon-cache $INSTALL_ROOT/usr/share/icons/hicolor
+
+
+
+figlet DevNix > $INSTALL_ROOT/etc/motd
+cat >> $INSTALL_ROOT/etc/motd <<EOF
+Welcome to DevNix. Visit https://www.devdungeon.com/devnix for help.
+EOF
 
 %end

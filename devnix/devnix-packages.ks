@@ -10,10 +10,8 @@
 #-bcm283x-firmware
 
 -simple-scan
--gnome-contacts
 -cheese
 -gnome-maps
--gnome-photos
 -totem
 
 util-linux-user
@@ -63,9 +61,18 @@ gpg
 keepass
 ruby
 jruby
+ruby-devel
+rubygem-pry
+rubygem-tk
+
+## Rust
 cargo
+
+## JavaScript
 nodejs
 golang
+
+figlet
 
 # For VSCode building
 libXt-devel
@@ -160,15 +167,16 @@ gdb
 # burp?
 
 qt5-designer
+
+
 python3-qt5-devel
 python3-docutils
 python3-sphinx
 python3-sphinx_rtd_theme
 python-devel
-ruby-devel
 python3-idle
-rubygem-pry
-rubygem-tk
+python3-bpython
+python3-urwid
 
 httpd
 tomcat
