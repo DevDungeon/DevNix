@@ -27,53 +27,53 @@ syslinux-perl
 livecd-tools
 
 zsh
-#fish
+fish
 
 vim
-#neovim
-#gvim
+neovim
+gvim
 
-#tmux
+tmux
+screen
 
-#git
+git
 #emacs
 
-#links
-#lynx
-#firefox
-#chromium
-#filezilla
-#thunderbird
+links
+lynx
+firefox
+chromium
+filezilla
+thunderbird
+gnome-boxes
+gimp
+kolourpaint
 
-#gimp
-#kolourpaint
+arduino
+fritzing
 
-#tomcat? httpd? nginx?
-
-#arduino
-#fritzing
-
-#gpg
-#keepass
-#ruby
-#jruby
-#cargo
-#nodejs
-#golang
+gpg
+keepass
+ruby
+jruby
+cargo
+nodejs
+golang
 
 # For VSCode building
-#libXt-devel
-#libXScrnSaver
-#libxkbfile-devel
-#libsecret-devel
+libXt-devel
+libXScrnSaver
+libxkbfile-devel
+libsecret-devel
 
 
 
-#java-1.8.0-openjdk
-#java-1.8.0-openjdk-devel
-#java-1.8.0-openjdk-openjfx
-#java-1.8.0-openjdk-src
-#java-1.8.0-openjdk-javadoc
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
+java-1.8.0-openjdk-openjfx
+java-1.8.0-openjdk-openjfx-devel
+java-1.8.0-openjdk-src
+java-1.8.0-openjdk-javadoc
 
 # Maybe too much space
 #java-11-openjdk
@@ -83,26 +83,26 @@ vim
 #java-11-openjdk-javadoc
 
 # MariaDB (Mysql) client+server
-#mariadb-server
-#postgresql-server
-#sqlite
+mariadb-server
+postgresql-server
+sqlite
 
-#ant
-#maven
-#gradle
+ant
+maven
+gradle
 
 ## Docker breaks the auto login on livecd
 #docker
 
 ## Chat
-#pidgin-otr
+pidgin-otr
 
 ## CLI apps
-#irssi
-#rtorrent
-#mutt
-#vifm
-#mc
+irssi
+rtorrent
+mutt
+vifm
+mc
 
 ## Dev tools
 #gcc
@@ -136,12 +136,12 @@ vim
 
 # security tools
 
-#nmap
-#wireshark
-#libpcap
-#libpcap-devel
-#bind-utils
-#traceroute
+nmap
+wireshark
+libpcap
+libpcap-devel
+bind-utils
+traceroute
 
 
 
@@ -157,6 +157,27 @@ vim
 # zap
 # fiddler
 # burp?
+
+qt5-designer
+python3-qt5-devel
+
+python-devel
+ruby-devel
+jruby-devel
+#jruby-doc
+#python3-doc
+#ruby-doc
+python3-idle
+rubygem-pry
+rubygem-tk
+
+httpd
+tomcat
+nginx
+
+
+ansible
+jenkins
 
 %end
 

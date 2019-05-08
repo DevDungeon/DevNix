@@ -61,6 +61,7 @@ use-tree-view=true
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
 executable-text-activation='ask'
+click-policy='single'
 
 [org/gtk/settings/file-chooser]
 show-hidden=true
@@ -72,6 +73,9 @@ clock-show-weekday=true
 
 [org/gnome/desktop/wm/preferences]
 action-middle-click-titlebar='minimize'
+
+[org/gnome/shell/extensions/dash-to-dock]
+extend-height=true
 
 FOE
 
