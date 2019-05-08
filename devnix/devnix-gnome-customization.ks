@@ -70,6 +70,7 @@ logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
 logo-size=7
 
 
+
 ## CAPS LOCK -> ESC key mapping
 cat > /etc/dconf/db/local.d/00-keymaps <<FOE
 [org/gnome/desktop/input-sources]
@@ -78,9 +79,25 @@ FOE
 
 ## Other preferences
 cat > /etc/dconf/db/local.d/00-misc <<FOE
-## Gnome terminal disable menu by default
+## Gnome terminal
 [org/gnome/terminal/legacy]
 default-show-menubar=false
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='#222222'
+bold-color='rgb(30,150,150)'
+bold-color-same-as-fg=false
+bold-is-bright=true
+cursor-background-color='rgb(200, 25, 200)'
+cursor-colors-set=true
+delete-binding='ascii-delete'
+foreground-color='rgb(0,255,255)'
+highlight-background-color='rgb(26,157,157)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(20,53,50)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(30,93,94)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(0,135,135)', 'rgb(255,255,0)']
+scrollback-unlimited=true
+use-theme-colors=false
 
 ## World Clocks
 #[org/gnome/clocks]
