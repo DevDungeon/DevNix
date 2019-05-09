@@ -25,36 +25,6 @@ cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
 favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'anaconda.desktop']
 FOE
 
-## Application folders
-[org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Image']
-name='Office'
-
-[org/gnome/desktop/app-folders/folders/Office]
-apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'gnome-contacts.desktop', 'org.gnome.Calendar.desktop']
-name='Office'
-
-[org/gnome/desktop/app-folders/folders/Terminal]
-apps=['gnome-termina', 'neovim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop']
-name='Terminal'
-
-[org/gnome/desktop/app-folders/folders/Web]
-apps=['firefox.desktop', 'chromium.desktop', 'thunderbird.desktop', 'filezilla.desktop']
-name='Web'
-
-[org/gnome/desktop/app-folders/folders/Editors]
-apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop']
-name='Editors'
-
-[org/gnome/desktop/app-folders/folders/Image]
-apps=['eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'gnome-photos.desktop', 'libreoffice-draw']
-name='Image'
-
-# Electronics group
-# Settings
-# virtualization
-
-
 ## Extensions
 # https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
 cat > /etc/dconf/db/local.d/00-extensions <<FOE
@@ -131,6 +101,38 @@ action-middle-click-titlebar='minimize'
 
 [org/gnome/shell/extensions/dash-to-dock]
 extend-height=true
+dock-fixed=true
+
+## Application folders
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Image']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/Office]
+apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'gnome-contacts.desktop', 'org.gnome.Calendar.desktop']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/Terminal]
+apps=['gnome-termina', 'neovim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop']
+name='Terminal'
+
+[org/gnome/desktop/app-folders/folders/Web]
+apps=['firefox.desktop', 'chromium.desktop', 'thunderbird.desktop', 'filezilla.desktop']
+name='Web'
+
+[org/gnome/desktop/app-folders/folders/Editors]
+apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop']
+name='Editors'
+
+[org/gnome/desktop/app-folders/folders/Image]
+apps=['eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'gnome-photos.desktop', 'libreoffice-draw']
+name='Image'
+
+# Electronics group
+# Settings
+# virtualization
+
+
 
 FOE
 

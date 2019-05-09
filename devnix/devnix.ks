@@ -1,3 +1,4 @@
+
 %include ../fedora-live-workstation.ks
 
 %include devnix-packages.ks
@@ -8,10 +9,7 @@
 
 # Override disk size in fedora-live-workstation.ks so it
 # has enough room to build. Does not indicate size of final iso
-part / --size 12000
-
-#reboot --eject
-#firstboot --enable --reconfig
+part / --size 14000
 
 %post --erroronfail
 

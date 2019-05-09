@@ -25,7 +25,7 @@ alias spider='scrapy runspider'
 alias ydl='youtube-dl'
 alias youtube-x='youtube-dl -x --audio-format vorbis --audio-quality 0'
 alias act='source ~/venv/bin/activate'
-
+alias matrix='cmatrix -C cyan' 
 # Load local config before initializing zsh
 source $HOME/.zshrc.local
 
