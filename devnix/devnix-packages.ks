@@ -1,7 +1,3 @@
-#devnix-packages.ks
-
-
-
 %packages
 
 # This package breaks build when trying to build fedora-disk
@@ -14,6 +10,7 @@ util-linux-user
 util-linux
 yum-utils
 
+## Disk tools
 blivet-gui
 gparted
 
@@ -31,98 +28,87 @@ fish
 
 ## Editors
 vim
-neovim
 gvim
+#neovim
 #nano
 #emacs
 
+## Terminal multiplexing
 tmux
 screen
 
+## Version control
 git
+bzr
+cvs
+mercurial
+gitg
+subversion
 
+## Browsers
 links
 lynx
 firefox
-mozilla-https-everywhere
-mozilla-noscript
-mozilla-adblockplus
+#mozilla-https-everywhere
+#mozilla-noscript
+#mozilla-adblockplus
 chromium
 chromedriver
 chrome-remote-desktop
 
+## Internet
 filezilla
 thunderbird
 
+## Virtualization
 gnome-boxes
 virt-manager
-gimp
-kolourpaint
 
+## Electronics
 arduino
 fritzing
 
-nasm
+
+
 
 
 gpg
 keepass
 
-## Ruby
-ruby
-ruby-doc
-ruby-ncurses
-jruby
-ruby-devel
-rubygem-pry
-rubygem-tk
-rubygem-selenium-webdriver
 
 ## Rust
 cargo
 
-## JavaScript
-nodejs
-nodejs-docs
-nodejs-typescript
-nodejs-ansi
-nodejs-yarn
-nodejs-sqlite3
-nodejs-markdown
-nodejs-discord-js
+## Assembly
+nasm
+nasm-doc
 
-golang
 
 figlet
 
-# For VSCode building
-libXt-devel
-libXScrnSaver
-libxkbfile-devel
-libsecret-devel
 
+## For VSCode building
+#libXt-devel
+#libXScrnSaver
+#libxkbfile-devel
+#libsecret-devel
 
-## Java stuff
-java-1.8.0-openjdk
-java-1.8.0-openjdk-devel
-java-1.8.0-openjdk-openjfx
-java-1.8.0-openjdk-openjfx-devel
-java-1.8.0-openjdk-src
-java-1.8.0-openjdk-javadoc
-jsoup
-ant
-maven
-gradle
-#java-11-openjdk
-#java-11-openjdk-headless
-#java-11-openjdk-devel
-#java-11-openjdk-src
-#java-11-openjdk-javadoc
+## For Electron building
+#dnf install clang dbus-devel gtk3-devel libnotify-devel \
+#                   libgnome-keyring-devel xorg-x11-server-utils libcap-devel \
+#                   cups-devel libXtst-devel alsa-lib-devel libXrandr-devel \
+#                   GConf2-devel nss-devel python-dbusmock
+
+## For GitHub desktop building?
+
 
 ## Databases
 mariadb-server
 postgresql-server
 sqlite
+sqlite-devel
+derby
+
 
 ## Docker breaks the auto login on livecd
 #docker
@@ -158,24 +144,27 @@ SDL2_net-devel
 
 ## "Development Tools"
 gettext
+
 diffstat
+colordiff
+
 doxygen
+
 patch
 patchutils
-subversion
-bzr
-colordiff
-cvs
+
+
+
+
 expect
 highlight
 lcov
 meld
-mercurial
+
 nemiver
 rcs
 robodoc
 scanmem
-gitg
 manedit
 
 ## Security tools
@@ -201,7 +190,7 @@ gdb
 # burp?
 
 
-godot
+
 
 qt5
 qt5-devel
@@ -213,36 +202,6 @@ glade3
 
 
 
-python3-pygame
-python3-docs
-python3-qt5
-python3-qt5-devel
-python3-docutils
-python3-sphinx
-python3-sphinx_rtd_theme
-python3-devel
-python3-idle
-python3-ipython
-python3-bpython
-python3-gunicorn
-python3-blivet
-python3-urwid
-python3-selenium
-python3-django
-python3-flask
-python3-pylint
-python3-certbot
-python3-mod_wsgi
-python3-tkinter
-python3-beautifulsoup4
-python3-gobject
-python3-paramiko
-uwsgi
-
-php
-composer
-php-pgsql
-php-mysqlnd
 
 httpd
 tomcat
@@ -256,11 +215,18 @@ gnome-builder
 flatpak
 cmatrix
 
+freeglut
+godot
+gimp
+kolourpaint
 inkscape
 audacity
 blender
 
-
+espeak-ng
+espeak-ng-devel
+espeak-ng-doc
+espeak-ng-vim
 
 # https://ibotpeaches.github.io/Apktool/install/
 # https://github.com/pxb1988/dex2jar/releases

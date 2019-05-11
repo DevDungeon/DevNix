@@ -22,7 +22,7 @@ EOF
 # https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
 cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'anaconda.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'anaconda.desktop']
 FOE
 
 ## Extensions
@@ -69,11 +69,6 @@ palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rg
 scrollback-unlimited=true
 use-theme-colors=false
 
-## World Clocks
-#[org/gnome/clocks]
-#world-clocks=[{'location': <(uint32 2, <('San Francisco', 'KOAK', true, [(0.65832848982162007, -2.133408063190589)], [(0.659296885757089, -2.1366218601153339)])>)>}, {'location': <(uint32 2, <('Houston', 'KHOU', true, [(0.51727195705981943, -1.6629933445314968)], [(0.51946730200614799, -1.6644030644216252)])>)>}, {'location': <(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>}, {'location': <(uint32 2, <('London', 'EGWU', true, [(0.89971722940307675, -0.007272211034407213)], [(0.89884456477707964, -0.0020362232784242244)])>)>}, {'location': <(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>}, {'location': <(uint32 2, <('Hong Kong', 'VHHH', true, [(0.38979019379430269, 1.9928751117510946)], [(0.38949931722116538, 1.9928751117510946)])>)>}, {'location': <(uint32 2, <('Sydney', 'YSSY', true, [(-0.59253928105207498, 2.6386469349889961)], [(-0.59137572239964786, 2.6392287230418559)])>)>}]
-
-## Nautilus file icon sizes
 [org/gnome/nautilus/icon-view]
 default-zoom-level='small'
 captions=['size', 'none', 'none']
