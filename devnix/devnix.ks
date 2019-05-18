@@ -41,27 +41,6 @@ mv geckodriver $INSTALL_ROOT/usr/bin/
 
 %post --erroronfail
 
-## Append the live system config to override the part in
-## fedora-live-workstation.ks where it disables the
-## spokes that ask for password and user.
-## By setting all the spokes visited to 0, it will
-## create the user during the install, and the gnome-initial-setup
-## will only run for the user and not when gdm loads
-
-cat >> /etc/rc.d/init.d/livesys << EOF
-
-# Unsuppress anaconda spokes redundant with gnome-initial-setup
-cat > /etc/sysconfig/anaconda << FOE
-[NetworkSpoke]
-visited=0
-[PasswordSpoke]
-visited=0
-[UserSpoke]
-visited=0
-FOE
-
-EOF
-
 #################################
 ## Change default shell to zsh ##
 #################################

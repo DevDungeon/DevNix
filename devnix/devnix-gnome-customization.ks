@@ -152,7 +152,7 @@ dock-fixed=true
 
 ## Favorites
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'keepass.desktop', 'anaconda.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'gedit.desktop', 'keepass.desktop', 'anaconda.desktop']
 
 ## Folders
 [org/gnome/desktop/app-folders]
