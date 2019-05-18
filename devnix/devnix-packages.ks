@@ -88,16 +88,26 @@ figlet
 
 
 ## For VSCode building
-#libXt-devel
-#libXScrnSaver
-#libxkbfile-devel
-#libsecret-devel
+libXt-devel
+libXScrnSaver
+libxkbfile-devel
+libsecret-devel
 
 ## For Electron building
-#dnf install clang dbus-devel gtk3-devel libnotify-devel \
-#                   libgnome-keyring-devel xorg-x11-server-utils libcap-devel \
-#                   cups-devel libXtst-devel alsa-lib-devel libXrandr-devel \
-#                   GConf2-devel nss-devel python-dbusmock
+clang
+dbus-devel
+gtk3-devel
+libnotify-devel
+libgnome-keyring-devel
+xorg-x11-server-utils
+libcap-devel
+cups-devel
+libXtst-devel
+alsa-lib-devel
+libXrandr-devel
+GConf2-devel
+nss-devel
+python-dbusmock
 
 ## For GitHub desktop building?
 
@@ -144,29 +154,23 @@ SDL2_mixer-devel
 SDL2_net-devel
 
 ## "Development Tools"
-gettext
+meld
+nemiver
+manedit
 
+gettext
 diffstat
 colordiff
-
 doxygen
-
 patch
 patchutils
-
-
-
-
 expect
 highlight
 lcov
-meld
-
-nemiver
 rcs
 robodoc
 scanmem
-manedit
+
 
 ## Security tools
 

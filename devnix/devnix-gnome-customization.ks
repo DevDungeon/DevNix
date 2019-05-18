@@ -156,15 +156,15 @@ favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'keepass.desktop
 
 ## Folders
 [org/gnome/desktop/app-folders]
-folder-children=['Utility', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', IDE', 'Electronics', 'Virtualization', 'Disks']
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'IDE', 'Electronics', 'Virtualization', 'Disks']
 
 
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
 apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop']
 
-[org/gnome/desktop/app-folders/folders/Utility]
-name='Utility'
+[org/gnome/desktop/app-folders/folders/Utilities]
+name='Utilities'
 apps=['gnome-system-monitor', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
 
 
