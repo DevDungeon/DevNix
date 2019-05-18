@@ -23,7 +23,7 @@ part / --size 15000
 %post --nochroot --erroronfail
 
 ## Store sources for building images
-git clone git@github.com:NanoDano/DevNix $INSTALL_ROOT/usr/src/DevNix
+git clone --branch f30 git@github.com:NanoDano/DevNix $INSTALL_ROOT/usr/src/DevNix
 cp resources/dist_keys/git_deploy_key $INSTALL_ROOT/usr/src/DevNix/id_rsa_deploy_key
 
 ## Gecko driver for Firefox and Selenium

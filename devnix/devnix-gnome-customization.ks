@@ -88,9 +88,9 @@ palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rg
 scrollback-unlimited=true
 use-theme-colors=false
 
-#[org/gnome/desktop/interface]
-#gtk-theme='Adwaita-dark'
-#icon-theme='breeze-dark'
+[org/gnome/desktop/interface]
+gtk-theme='Adwaita-dark'
+icon-theme='breeze-dark'
 
 
 ## Nautilus
