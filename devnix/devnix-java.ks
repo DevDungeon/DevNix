@@ -15,7 +15,7 @@ maven-javadoc
 gradle
 
 # derby installed in Databases section
-derby-javadoc
+
 
 #java-11-openjdk
 #java-11-openjdk-headless

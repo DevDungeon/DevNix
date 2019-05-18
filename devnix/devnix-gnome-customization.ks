@@ -1,7 +1,7 @@
 %packages
 
-gnome-tweak-tool
 gnome-shell-extension-dash-to-dock
+gnome-tweak-tool
 dconf-editor
 
 %end
@@ -12,13 +12,24 @@ dconf-editor
 
 %post  --erroronfail
 
-## Add nautilus/file bookmarks
+#################################
+## Add nautilus/file bookmarks ##
+#################################
+
 mkdir -p /etc/skel/.config/gtk-3.0
 cat > /etc/skel/.config/gtk-3.0/bookmarks <<EOF
 file:/// /
+file:///etc/ /etc/
+file:///var/log/ /var/log/
+file:///usr/src/ /usr/src/
+file:///usr/share/doc/ /usr/share/doc
 EOF
 
-## Application favorites
+
+###########################
+## Application favorites ##
+###########################
+
 # https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
 cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
 [org/gnome/shell]
@@ -40,16 +51,24 @@ logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
 logo-size=7
 
 
+#################
+## Keymappings ##
+#################
 
-## CAPS LOCK -> ESC key mapping
 cat > /etc/dconf/db/local.d/00-keymaps <<FOE
 [org/gnome/desktop/input-sources]
 xkb-options=['caps:escape']
 FOE
 
-## Other preferences
+
+#######################
+## Other preferences ##
+#######################
+
 cat > /etc/dconf/db/local.d/00-misc <<FOE
+
 ## Gnome terminal
+
 [org/gnome/terminal/legacy]
 default-show-menubar=false
 
@@ -69,6 +88,13 @@ palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rg
 scrollback-unlimited=true
 use-theme-colors=false
 
+#[org/gnome/desktop/interface]
+#gtk-theme='Adwaita-dark'
+#icon-theme='breeze-dark'
+
+
+## Nautilus
+
 [org/gnome/nautilus/icon-view]
 default-zoom-level='small'
 captions=['size', 'none', 'none']
@@ -86,6 +112,8 @@ show-delete-permanently=true
 [org/gtk/settings/file-chooser]
 show-hidden=true
 sort-directories-first=true
+
+## Misc
 
 [org/gnome/desktop/interface]
 clock-format='12h'

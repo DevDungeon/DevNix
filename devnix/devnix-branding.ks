@@ -7,24 +7,24 @@
 -fedora-release
 -fedora-release-notes
 -fedora-release-workstation
-#-system-release
 generic-release
 generic-logos
 generic-release-notes
-#generic-release-workstation
-
 
 %end
 
 
 %post --nochroot --erroronfail
+
 # Copy wallpaper and logos over
 mkdir -p $INSTALL_ROOT/usr/local/share/backgrounds
 cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/backgrounds/wallpaper.png
+
 mkdir -p $INSTALL_ROOT/usr/local/share/devnix/logos
 cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/local/share/devnix/logos/
 cp resources/logos/devnix_2000px.png $INSTALL_ROOT/usr/local/share/devnix/logos/
 cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.png
+
 %end
 
 
@@ -46,17 +46,14 @@ picture-options='stretched'
 primary-color='000000'
 secondary-color='333333'
 
-## Login screen logo
-# Originals /usr/share/pixmaps/fedora-gdm-logo.png # 151x48
 [org/gnome/login-screen]
 logo='/usr/local/share/devnix/logos/devnix_800px.png'
 
-## Lock screen/screensaver image
 [org/gnome/desktop/screensaver]
 picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 FOE
 
-dconf update
+
 
 
 
@@ -164,7 +161,7 @@ FOE
 # /usr/share/plymouth/themes/charge/throbber-00.png
 # /usr/share/plymouth/themes/charge/throbber-15.png
 
-
+dconf update
 
 %end
 
@@ -202,8 +199,15 @@ sed -i s/Fedora/DevNix/g $INSTALL_ROOT/usr/share/anaconda/gnome/fedora-welcome.d
 #$INSTALL_ROOT/usr/share/anaconda/gnome/install-button.png
 
 
+#####################
+## Installer Icons ##
+#####################
 
-## Installer Icons
+# Change /usr/share/icons/hicolor/scalable/apps/
+#fedora-logo-icon.svg #220x254
+#fedora-logo-sprite.svg #220x254
+# start-here.svg
+
 cp resources/icons/devnix-lettermark-16.png $INSTALL_ROOT/usr/share/icons/hicolor/16x16/apps/devnix-lettermark.png
 cp resources/icons/devnix-lettermark-22.png $INSTALL_ROOT/usr/share/icons/hicolor/22x22/apps/anaconda.png
 cp resources/icons/devnix-lettermark-16.png $INSTALL_ROOT/usr/share/icons/hicolor/16x16/apps/anaconda.png
@@ -235,17 +239,20 @@ cp resources/icons/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicol
 
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
 
-# Change /usr/share/icons/hicolor/scalable/apps/
-#fedora-logo-icon.svg #220x254
-#fedora-logo-sprite.svg #220x254
-# start-here.svg
-
 gtk-update-icon-cache $INSTALL_ROOT/usr/share/icons/hicolor
 
 
+##############
+## SSH MOTD ##
+##############
 
-figlet DevNix > $INSTALL_ROOT/etc/motd
-cat >> $INSTALL_ROOT/etc/motd <<EOF
+cat > $INSTALL_ROOT/etc/motd <<EOF
+ ____             _   _ _      
+|  _ \  _____   _| \ | (_)_  __
+| | | |/ _ \ \ / /  \| | \ \/ /
+| |_| |  __/\ V /| |\  | |>  < 
+|____/ \___| \_/ |_| \_|_/_/\_\
+                               
 Welcome to DevNix. Visit https://www.devdungeon.com/devnix for help.
 EOF
 

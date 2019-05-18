@@ -106,9 +106,10 @@ figlet
 mariadb-server
 postgresql-server
 sqlite
+sqlite-doc
 sqlite-devel
 derby
-
+derby-javadoc
 
 ## Docker breaks the auto login on livecd
 #docker
