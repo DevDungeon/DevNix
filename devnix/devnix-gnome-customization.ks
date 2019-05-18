@@ -37,7 +37,6 @@ EOF
 cat > /etc/dconf/db/local.d/00-extensions <<FOE
 [org/gnome/shell]
 enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org']
-FOE
 
 ## Background logo extension (background-logo@fedorahosted.org)
 [org/fedorahosted/background-logo-extension]
@@ -45,6 +44,9 @@ logo-always-visible=true
 logo-border=20
 logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
 logo-size=7
+FOE
+
+
 
 
 #################
@@ -154,15 +156,17 @@ favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'keepass.desktop
 
 ## Folders
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', IDE', 'Electronics', 'Virtualization', 'Disks']
+folder-children=['Utility', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', IDE', 'Electronics', 'Virtualization', 'Disks']
 
-[org/gnome/desktop/app-folders/folders/Utilities]
-name='Utilities'
-apps=['gnome-system-monitor', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
 
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
 apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop']
+
+[org/gnome/desktop/app-folders/folders/Utility]
+name='Utility'
+apps=['gnome-system-monitor', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
+
 
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
