@@ -182,7 +182,7 @@ apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop']
 
 [org/gnome/desktop/app-folders/folders/Graphics]
 name='Graphics'
-apps=['blender.desktop', 'inkscape.desktop, 'eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'org.gnome.Photos.desktop', 'libreoffice-draw', 'org.gnome.Totem.desktop', 'org.gnome.Cheese.desktop']
+apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'org.gnome.Photos.desktop', 'libreoffice-draw', 'org.gnome.Totem.desktop', 'org.gnome.Cheese.desktop']
 
 [org/gnome/desktop/app-folders/folders/Development]
 name='Development'
@@ -194,7 +194,8 @@ apps=['audacity.desktop', 'rhythmbox.desktop', 'ardour5.desktop']
 
 [org/gnome/desktop/app-folders/folders/IDE]
 name='IDE'
-apps=['godot.desktop', 'org.gnome.Builder.desktop']
+apps=['godot.desktop', 'org.gnome.Builder.desktop', 'arduino.desktop']
+
 
 [org/gnome/desktop/app-folders/folders/Electronics]
 name='Electronics'
