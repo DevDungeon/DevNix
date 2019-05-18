@@ -20,6 +20,9 @@
 part / --size 15000
 
 
+
+
+
 %post --nochroot --erroronfail
 
 ## Store sources for building images

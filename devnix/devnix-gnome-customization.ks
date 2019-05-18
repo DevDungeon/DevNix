@@ -30,11 +30,7 @@ EOF
 ## Application favorites ##
 ###########################
 
-# https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
-cat > /etc/dconf/db/local.d/00-favorite-apps <<FOE
-[org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'anaconda.desktop']
-FOE
+
 
 ## Extensions
 # https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
@@ -88,9 +84,9 @@ palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rg
 scrollback-unlimited=true
 use-theme-colors=false
 
-[org/gnome/desktop/interface]
-gtk-theme='Adwaita-dark'
-icon-theme='breeze-dark'
+#[org/gnome/desktop/interface]
+#gtk-theme='Adwaita-dark'
+#icon-theme='breeze-dark'
 
 
 ## Nautilus
@@ -113,6 +109,26 @@ show-delete-permanently=true
 show-hidden=true
 sort-directories-first=true
 
+## Gedit
+
+[org/gnome/gedit/preferences/ui]
+side-panel-visible=true
+
+[org/gnome/gedit/preferences/editor]
+auto-indent=true
+bracket-matching=true
+display-line-numbers=true
+display-overview-map=true
+editor-font='Hack 12'
+highlight-current-line=true
+insert-spaces=true
+scheme='cobalt'
+tabs-size=4
+use-default-font=false
+
+[org/gnome/gedit/plugins]
+active-plugins=['docinfo', 'modelines', 'filebrowser', 'time', 'externaltools', 'quickhighlight']
+
 ## Misc
 
 [org/gnome/desktop/interface]
@@ -126,34 +142,77 @@ action-middle-click-titlebar='minimize'
 extend-height=true
 dock-fixed=true
 
-## Application folders
+
+
+#########################
+## Application folders ##
+#########################
+
+## Favorites
+[org/gnome/shell]
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'keepass.desktop', 'anaconda.desktop']
+
+## Folders
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Image']
-name='Office'
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', IDE', 'Electronics', 'Virtualization', 'Disks']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+name='Utilities'
+apps=['gnome-system-monitor', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
 
 [org/gnome/desktop/app-folders/folders/Office]
-apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'gnome-contacts.desktop', 'org.gnome.Calendar.desktop']
 name='Office'
+apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop']
 
 [org/gnome/desktop/app-folders/folders/Terminal]
-apps=['gnome-termina', 'neovim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop']
 name='Terminal'
+apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop', 'vifm.desktop']
 
 [org/gnome/desktop/app-folders/folders/Web]
-apps=['firefox.desktop', 'chromium.desktop', 'thunderbird.desktop', 'filezilla.desktop']
 name='Web'
+apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop']
 
 [org/gnome/desktop/app-folders/folders/Editors]
-apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop']
 name='Editors'
+apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop']
 
-[org/gnome/desktop/app-folders/folders/Image]
-apps=['eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'gnome-photos.desktop', 'libreoffice-draw']
-name='Image'
+[org/gnome/desktop/app-folders/folders/Graphics]
+name='Graphics'
+apps=['blender.desktop', 'inkscape.desktop, 'eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'org.gnome.Photos.desktop', 'libreoffice-draw', 'org.gnome.Totem.desktop', 'org.gnome.Cheese.desktop']
 
-# Electronics group
-# Settings
-# virtualization
+[org/gnome/desktop/app-folders/folders/Development]
+name='Development'
+apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdubsviewer.desktop', 'qt5-linguist.desktop']
+
+[org/gnome/desktop/app-folders/folders/Audio]
+name='Audio'
+apps=['audacity.desktop', 'rhythmbox.desktop', 'ardour5.desktop']
+
+[org/gnome/desktop/app-folders/folders/IDE]
+name='IDE'
+apps=['godot.desktop', 'org.gnome.Builder.desktop']
+
+[org/gnome/desktop/app-folders/folders/Electronics]
+name='Electronics'
+apps=['arduino.desktop', 'fritzing.desktop']
+
+[org/gnome/desktop/app-folders/folders/Virtualization]
+name='Virtualization'
+apps=['org.gnome.Boxes.desktop', 'virt-manager.desktop']
+
+[org/gnome/desktop/app-folders/folders/Disks]
+name='Disks'
+apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop']
+
+## TODO
+#rtorrent
+#irssi
+#pidgin
+#irb
+#bpython-urwid
+#gdb
+#nmap
+#wireshark.desktop
 
 
 

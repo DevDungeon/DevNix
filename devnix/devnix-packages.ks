@@ -58,7 +58,7 @@ chrome-remote-desktop
 
 ## Internet
 filezilla
-thunderbird
+evolution
 
 ## Virtualization
 gnome-boxes
@@ -190,19 +190,11 @@ gdb
 # fiddler
 # burp?
 
-
-
-
 qt5
 qt5-devel
-qt5ct
 qt5-designer
-qt-creator
 
 glade3
-
-
-
 
 httpd
 tomcat
@@ -221,8 +213,10 @@ godot
 gimp
 kolourpaint
 inkscape
-audacity
 blender
+
+audacity
+ardour5
 
 espeak-ng
 espeak-ng-devel

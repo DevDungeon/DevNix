@@ -1,0 +1,6 @@
+[distutils]
+index-servers=pypi
+
+[pypi]
+#username = MyUser
+#password = s3cr3t
