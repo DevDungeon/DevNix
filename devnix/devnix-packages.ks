@@ -29,9 +29,9 @@ fish
 ## Editors
 vim
 gvim
-#neovim
-#nano
-#emacs
+neovim
+nano
+emacs
 
 ## Terminal multiplexing
 tmux
@@ -73,7 +73,7 @@ fritzing
 
 
 gpg
-keepass
+#keepass
 
 
 ## Rust

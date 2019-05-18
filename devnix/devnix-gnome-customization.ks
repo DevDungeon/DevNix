@@ -152,33 +152,41 @@ dock-fixed=true
 
 ## Favorites
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'gedit.desktop', 'keepass.desktop', 'anaconda.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit.desktop', 'anaconda.desktop']
 
 ## Folders
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'IDE', 'Electronics', 'Virtualization', 'Disks']
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks']
 
 
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
-apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop']
+apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop']
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 name='Utilities'
-apps=['gnome-system-monitor', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
+apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
 
 
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
 apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop', 'vifm.desktop']
+#rtorrent
+#irssi
+
+
 
 [org/gnome/desktop/app-folders/folders/Web]
 name='Web'
 apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop']
+##rtorrent
+#irssi
+
 
 [org/gnome/desktop/app-folders/folders/Editors]
-name='Editors'
-apps=['gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop']
+name='Editors/IDE'
+apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop']
+#netbeans
 
 [org/gnome/desktop/app-folders/folders/Graphics]
 name='Graphics'
@@ -188,18 +196,19 @@ apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint
 name='Development'
 apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdubsviewer.desktop', 'qt5-linguist.desktop']
 
+#irb
+#bpython-urwid
+#gdb
+
 [org/gnome/desktop/app-folders/folders/Audio]
 name='Audio'
 apps=['audacity.desktop', 'rhythmbox.desktop', 'ardour5.desktop']
 
-[org/gnome/desktop/app-folders/folders/IDE]
-name='IDE'
-apps=['godot.desktop', 'org.gnome.Builder.desktop', 'arduino.desktop']
 
 
 [org/gnome/desktop/app-folders/folders/Electronics]
 name='Electronics'
-apps=['arduino.desktop', 'fritzing.desktop']
+apps=['cc.arduino.arduinoide.desktop', 'fritzing.desktop']
 
 [org/gnome/desktop/app-folders/folders/Virtualization]
 name='Virtualization'
@@ -209,15 +218,14 @@ apps=['org.gnome.Boxes.desktop', 'virt-manager.desktop']
 name='Disks'
 apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop']
 
-## TODO
-#rtorrent
-#irssi
-#pidgin
-#irb
-#bpython-urwid
-#gdb
+[org/gnome/desktop/app-folders/folders/Security]
+name='Security'
+apps=['wireshark.desktop']
 #nmap
-#wireshark.desktop
+#zap
+
+
+
 
 
 

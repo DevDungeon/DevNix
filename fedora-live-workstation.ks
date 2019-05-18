@@ -38,13 +38,13 @@ touch ~liveuser/.config/gnome-initial-setup-done
 # suppress anaconda spokes redundant with gnome-initial-setup
 cat >> /etc/sysconfig/anaconda << FOE
 [NetworkSpoke]
-visited=1
+visited=0
 
 [PasswordSpoke]
-visited=1
+visited=0
 
 [UserSpoke]
-visited=1
+visited=0
 FOE
 
 # make the installer show up
