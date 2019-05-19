@@ -55,7 +55,6 @@ dconf-editor
 zsh
 fish
 tcl
-powershell
 
 
 ###########################
@@ -258,10 +257,10 @@ tk
 #################
 
 httpd
-tomcat
-tomcat-javadoc
 nginx
 uwsgi
+tomcat
+tomcat-javadoc
 jetty
 jetty-javadoc
 
@@ -276,7 +275,6 @@ jenkins-javadoc
 jenkins-cli
 jenkins-cli-javadoc
 jenkins-webapp
-jenkins-webapp-javadoc
 jenkins-ant-plugin
 jenkins-ant-plugin-javadoc
 jenkins-junit-plugin
@@ -284,7 +282,6 @@ jenkins-junit-plugin-javadoc
 jenkins-ldap-plugin
 jenkins-ldap-plugin-javadoc
 jenkins-plugins-pom
-jenkins-plugins-pom-javadoc
 jenkins-mailer-plugin
 jenkins-mailer-plugin-javadoc
 jenkins-javadoc-plugin
@@ -292,7 +289,6 @@ jenkins-javadoc-plugin-javadoc
 jenkins-executable-war
 jenkins-executable-war-javadoc
 jenkins-executable-war-webroot
-jenkins-executable-war-webroot-javadoc
 jenkins-ssh-credentials-plugin
 jenkins-ssh-credentials-plugin-javadoc
 
@@ -402,6 +398,8 @@ ant
 ant-javadoc
 maven
 maven-javadoc
+maven-shade-plugin
+maven-shade-plugin-javadoc
 gradle
 
 #java-11-openjdk
@@ -415,9 +413,9 @@ scala
 
 log4j
 log4j-javadoc
-sl4j
-sl4j-javadoc
-sl4j-sources
+slf4j
+slf4j-javadoc
+slf4j-sources
 
 junit
 junit-manual
@@ -647,6 +645,9 @@ nasm-doc
 ######################
 
 godot
+
+ogre
+ogre-devel
 
 freeglut
 freeglut-devel
