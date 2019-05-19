@@ -13,7 +13,8 @@
 
 # Override disk size in fedora-live-workstation.ks so it
 # has enough room to build. Does not indicate size of final iso
-part / --size 15000
+#part / --size 18650 # minimum as of delta6
+part / --size 19000
 
 
 

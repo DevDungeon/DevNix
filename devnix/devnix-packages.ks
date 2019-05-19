@@ -273,7 +273,6 @@ ansible
 jenkins
 jenkins-javadoc
 jenkins-cli
-jenkins-cli-javadoc
 jenkins-webapp
 jenkins-ant-plugin
 jenkins-ant-plugin-javadoc
@@ -402,11 +401,12 @@ maven-shade-plugin
 maven-shade-plugin-javadoc
 gradle
 
-#java-11-openjdk
-#java-11-openjdk-headless
-#java-11-openjdk-devel
-#java-11-openjdk-src
-#java-11-openjdk-javadoc
+java-latest-openjdk
+java-latest-openjdk-src
+java-latest-openjdk-devel
+java-latest-openjdk-jmods
+java-latest-openjdk-javadoc
+
 
 clojure
 scala
@@ -423,7 +423,7 @@ junit-javadoc
 ant-junit
 
 jackson
-jackson-javdoc
+jackson-javadoc
 
 jersey
 jersey-javadoc
