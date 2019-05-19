@@ -1,22 +1,19 @@
 %include ../fedora-live-workstation.ks
 
 %include devnix-packages.ks
-
-%include devnix-python.ks
-%include devnix-ruby.ks
-
-
 %include devnix-dotfiles.ks
-%include devnix-fonts.ks
-%include devnix-gnome-customization.ks
 %include devnix-branding.ks
+%include devnix-gnome-customization.ks
+
+
+# These could use some better packaging and updating
+%include devnix-fonts.ks
+#%include devnix-extra-software.ks
 
 
 # Override disk size in fedora-live-workstation.ks so it
 # has enough room to build. Does not indicate size of final iso
 part / --size 15000
-
-
 
 
 

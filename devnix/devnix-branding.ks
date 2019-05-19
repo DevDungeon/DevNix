@@ -16,10 +16,6 @@ generic-release-notes
 
 %post --nochroot --erroronfail
 
-# Copy wallpaper and logos over
-mkdir -p $INSTALL_ROOT/usr/local/share/backgrounds
-cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/backgrounds/wallpaper.png
-
 mkdir -p $INSTALL_ROOT/usr/local/share/devnix/logos
 cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/local/share/devnix/logos/
 cp resources/logos/devnix_2000px.png $INSTALL_ROOT/usr/local/share/devnix/logos/
@@ -37,21 +33,7 @@ cat > /.buildstamp <<EOF
 IsFinal=true
 EOF
 
-## Backgrounds https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
-cat > /etc/dconf/db/local.d/00-backgrounds <<FOE
-## Desktop wallpaper
-[org/gnome/desktop/background]
-picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
-picture-options='stretched'
-primary-color='000000'
-secondary-color='333333'
 
-[org/gnome/login-screen]
-logo='/usr/local/share/devnix/logos/devnix_800px.png'
-
-[org/gnome/desktop/screensaver]
-picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
-FOE
 
 
 
@@ -161,7 +143,7 @@ FOE
 # /usr/share/plymouth/themes/charge/throbber-00.png
 # /usr/share/plymouth/themes/charge/throbber-15.png
 
-dconf update
+
 
 %end
 

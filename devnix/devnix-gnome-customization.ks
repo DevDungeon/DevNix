@@ -1,3 +1,11 @@
+%post --nochroot
+
+mkdir -p $INSTALL_ROOT/usr/local/share/backgrounds
+cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/backgrounds/wallpaper.png
+
+
+%end
+
 
 %post  --erroronfail
 
@@ -17,9 +25,16 @@ EOF
 
 
 
-## Extensions
+
+
+cat > /etc/dconf/db/local.d/00-devnix <<FOE
+
+################
+## Extensions ##
+################
+
 # https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
-cat > /etc/dconf/db/local.d/00-extensions <<FOE
+
 [org/gnome/shell]
 enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org']
 
@@ -29,26 +44,35 @@ logo-always-visible=true
 logo-border=20
 logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
 logo-size=10
-FOE
-
-
 
 
 #################
 ## Keymappings ##
 #################
 
-cat > /etc/dconf/db/local.d/00-keymaps <<FOE
 [org/gnome/desktop/input-sources]
 xkb-options=['caps:escape']
-FOE
 
 
-#######################
-## Other preferences ##
-#######################
+#################
+## Backgrounds ##
+#################
 
-cat > /etc/dconf/db/local.d/00-misc <<FOE
+# https://help.gnome.org/admin/system-admin-guide/stable/desktop-background.html.en
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
+picture-options='stretched'
+primary-color='000000'
+secondary-color='333333'
+
+[org/gnome/login-screen]
+logo='/usr/local/share/devnix/logos/devnix_800px.png'
+
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
+
+
 
 ####################
 ## Gnome terminal ##
@@ -143,8 +167,6 @@ dock-fixed=true
 
 
 
-
-
 ###########################
 ## Application favorites ##
 ###########################
@@ -160,7 +182,6 @@ favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks']
 
-
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
 apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop']
@@ -169,21 +190,17 @@ apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-dra
 name='Utilities'
 apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
 
-
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
 apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop', 'vifm.desktop']
 #rtorrent
 #irssi
 
-
-
 [org/gnome/desktop/app-folders/folders/Web]
 name='Web'
 apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop']
 ##rtorrent
 #irssi
-
 
 [org/gnome/desktop/app-folders/folders/Editors]
 name='Editors/IDE'
@@ -205,8 +222,6 @@ apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nem
 [org/gnome/desktop/app-folders/folders/Audio]
 name='Audio'
 apps=['audacity.desktop', 'rhythmbox.desktop', 'ardour5.desktop']
-
-
 
 [org/gnome/desktop/app-folders/folders/Electronics]
 name='Electronics'

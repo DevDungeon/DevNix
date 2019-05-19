@@ -17,7 +17,10 @@ chmod 600 $INSTALL_ROOT/etc/skel/.ssh/config
 cp resources/skel/pypirc $INSTALL_ROOT/etc/skel/.pypirc
 
 # oh-my-zsh
+# TODO REMOVE
 git clone https://github.com/robbyrussell/oh-my-zsh $INSTALL_ROOT/etc/skel/.oh-my-zsh
+
+# maven m2 settings example TODO
 
 %end
 

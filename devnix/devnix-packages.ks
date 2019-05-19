@@ -8,7 +8,7 @@
 util-linux-user
 util-linux
 yum-utils
-
+flatpak
 
 ################
 ## Disk tools ##
@@ -54,6 +54,8 @@ dconf-editor
 
 zsh
 fish
+tcl
+powershell
 
 
 ###########################
@@ -89,6 +91,47 @@ gitg
 subversion
 
 
+
+
+####################
+## Virtualization ##
+####################
+
+gnome-boxes
+virt-manager
+vagrant
+
+
+###############
+## Databases ##
+###############
+
+mariadb-server
+
+postgresql-server
+
+sqlite
+sqlite-doc
+sqlite-devel
+sqlitebrowser
+
+derby
+derby-javadoc
+
+sqliteodbc
+mysql-connector-odbc
+postgresql-odbc
+
+vsqlite++
+vsqlite++-devel
+vsqlite++-doc
+sqlite-tcl
+
+
+
+
+
+
 ##########
 ## Web  ##
 ##########
@@ -117,16 +160,6 @@ filezilla
 mutt
 evolution
 
-####################
-## Virtualization ##
-####################
-
-gnome-boxes
-virt-manager
-vagrant
-
-
-
 
 #################
 ## Electronics ##
@@ -135,6 +168,202 @@ vagrant
 arduino
 fritzing
 
+
+
+#########################
+## For VSCode building ##
+#########################
+
+libXt-devel
+libXScrnSaver
+libxkbfile-devel
+libsecret-devel
+
+
+###########################
+## For Electron building ##
+###########################
+
+dbus-devel
+gtk3-devel
+libnotify-devel
+libgnome-keyring-devel
+xorg-x11-server-utils
+libcap-devel
+cups-devel
+libXtst-devel
+alsa-lib-devel
+libXrandr-devel
+GConf2-devel
+nss-devel
+python-dbusmock
+
+
+
+
+
+## Docker breaks the auto login on livecd
+#docker
+
+
+##########
+## Chat ##
+##########
+
+irssi
+pidgin
+pidgin-otr
+pidgin-discord
+pidgin-docs
+libpurple-devel
+
+
+#############
+## Torrent ##
+#############
+
+transmission
+rtorrent
+
+
+
+
+###################
+## Network tools ##
+###################
+
+nmap
+wireshark
+libpcap
+libpcap-devel
+bind-utils
+traceroute
+
+
+#########
+## GUI ##
+#########
+
+qt5
+qt5-devel
+qt5-designer
+
+glade3
+
+tk
+
+
+#################
+## Web servers ##
+#################
+
+httpd
+tomcat
+tomcat-javadoc
+nginx
+uwsgi
+jetty
+jetty-javadoc
+
+############
+## Devops ##
+############
+
+ansible
+
+jenkins
+jenkins-javadoc
+jenkins-cli
+jenkins-cli-javadoc
+jenkins-webapp
+jenkins-webapp-javadoc
+jenkins-ant-plugin
+jenkins-ant-plugin-javadoc
+jenkins-junit-plugin
+jenkins-junit-plugin-javadoc
+jenkins-ldap-plugin
+jenkins-ldap-plugin-javadoc
+jenkins-plugins-pom
+jenkins-plugins-pom-javadoc
+jenkins-mailer-plugin
+jenkins-mailer-plugin-javadoc
+jenkins-javadoc-plugin
+jenkins-javadoc-plugin-javadoc
+jenkins-executable-war
+jenkins-executable-war-javadoc
+jenkins-executable-war-webroot
+jenkins-executable-war-webroot-javadoc
+jenkins-ssh-credentials-plugin
+jenkins-ssh-credentials-plugin-javadoc
+
+
+####################
+## Graphics tools ##
+####################
+
+gimp
+kolourpaint
+inkscape
+blender
+
+#################
+## Audio tools ##
+#################
+audacity
+ardour5
+rhythmbox
+
+
+####################
+## Text-to-speech ##
+####################
+
+espeak-ng
+espeak-ng-devel
+espeak-ng-doc
+espeak-ng-vim
+
+
+##########
+## Misc ##
+##########
+
+figlet
+gpg
+cmatrix
+
+
+###############
+## Dev tools ##
+###############
+
+gdb
+clang
+gcc
+gcc-c++
+gcc-arm-linux-gnu
+gcc-c++-arm-linux-gnu
+make
+autoconf
+pkgconfig
+meld
+nemiver
+manedit
+
+gettext
+diffstat
+colordiff
+doxygen
+patch
+patchutils
+expect
+highlight
+lcov
+rcs
+robodoc
+scanmem
+
+poco-devel
 
 ###########
 ## Lisps ##
@@ -145,6 +374,9 @@ clisp-devel
 guile
 guile-lib
 guile-devel
+racket
+racket-devel
+racket-doc
 
 
 ########
@@ -181,6 +413,61 @@ gradle
 clojure
 scala
 
+log4j
+log4j-javadoc
+sl4j
+sl4j-javadoc
+sl4j-sources
+
+junit
+junit-manual
+junit-javadoc
+ant-junit
+
+jackson
+jackson-javdoc
+
+jersey
+jersey-javadoc
+
+guava
+guava-javadoc
+
+google-guice
+google-guice-javadoc
+
+javasqlite
+javasqlite-javadoc
+sqlite-jdbc
+sqlite-jdbc-javadoc
+sqljet
+sqljet-javadoc
+mysql-connector-java
+postgresql-jdbc
+postgresql-jdbc-javadoc
+
+springframework
+springframework-javadoc
+
+hibernate-core
+hibernate-javadoc
+
+apache-commons-parent
+apache-commons-cli
+apache-commons-cli-javadoc
+apache-commons-csv
+apache-commons-csv-javadoc
+apache-commons-net
+apache-commons-net-javadoc
+apache-commons-collections
+apache-commons-collections-javadoc
+apache-commons-codec
+apache-commons-codec-javadoc
+apache-commons-email
+apache-commons-email-javadoc
+
+jsoup
+jsoup-javadoc
 
 ################
 ## JavaScript ##
@@ -193,6 +480,136 @@ nodejs-yarn
 nodejs-typescript
 nodejs-sqlite3
 nodejs-discord-js
+
+
+############
+## Python ##
+############
+
+python3
+python3-docs
+python3-devel
+python3-idle
+python3-pygame
+python3-qt5
+python3-qt5-devel
+python3-mod_wsgi
+mysql-connector-python3
+python3-tkinter
+python3-gobject
+python3-jenkins
+python3-jenkinsapi
+python3-paramiko
+python3-sphinx
+python3-sphinx_rtd_theme
+python3-gunicorn
+python3-selenium
+python3-beautifulsoup4
+python3-django
+python3-flask
+python3-pylint
+python3-certbot
+python3-gunicorn
+python3-bpython
+python3-urwid
+
+python3-scapy
+python3-scrapy
+
+#############
+## Haskell ##
+#############
+
+ghc
+ghc-manual
+
+##########
+## .NET ##
+##########
+
+#monodevelop
+#gtk-sharp3
+#gtk-sharp3-devel
+#gnome-desktop-sharp
+#gnome-sharp
+#mono-core
+#mono-devel
+#monodevelop-devel
+#monodevelop-debugger-gdb
+#mono-extras
+#mono-mvc
+#mono-mvc-devel
+#mono-web
+#mono-web-devel
+#gtk-sharp2
+#gtk-sharp2-devel
+#nuget
+#mysql-connector-net
+
+
+
+
+##########
+## Ruby ##
+##########
+
+ruby
+ruby-doc
+ruby-devel
+
+jruby
+jruby-devel
+jruby-javadoc
+
+
+rubygem-bundler
+#rubygem-bundler-doc#Broken
+rubygem-rake
+rubygem-rake-doc
+rubygem-rdoc
+#rubygem-rdoc-doc#Broken
+
+rubygem-glu
+rubygem-glu-doc
+rubygem-glut
+rubygem-glut-doc
+
+ruby-ncurses
+rubygem-colorize
+rubygem-colorize-doc
+rubygem-ansi
+rubygem-ansi-doc
+
+rubygem-mongo
+rubygem-mongo-doc
+rubygem-sqlite3
+rubygem-sqlite3-doc
+rubygem-mysql2
+rubygem-mysql2-doc
+rubygem-pg
+rubygem-pg-doc
+
+rubygem-irb
+rubygem-pry
+rubygem-pry-doc
+rubygem-tk
+rubygem-tk-doc
+
+rubygem-gtk3
+rubygem-gtk3-devel
+rubygem-gtk3-doc
+
+rubygem-rails
+rubygem-rails-doc
+rubygem-sinatra
+rubygem-sinatra-doc
+
+rubygem-nokogiri
+rubygem-nokogiri-doc
+
+
+rubygem-opengl
+rubygem-opengl-doc
 
 
 #########
@@ -225,204 +642,31 @@ cargo
 nasm
 nasm-doc
 
-
-
-
-
-#########################
-## For VSCode building ##
-#########################
-
-libXt-devel
-libXScrnSaver
-libxkbfile-devel
-libsecret-devel
-
-
-###########################
-## For Electron building ##
-###########################
-
-dbus-devel
-gtk3-devel
-libnotify-devel
-libgnome-keyring-devel
-xorg-x11-server-utils
-libcap-devel
-cups-devel
-libXtst-devel
-alsa-lib-devel
-libXrandr-devel
-GConf2-devel
-nss-devel
-python-dbusmock
-
-
-###############
-## Databases ##
-###############
-
-mariadb-server
-postgresql-server
-sqlite
-sqlite-doc
-sqlite-devel
-#derby
-#derby-javadoc
-
-## Docker breaks the auto login on livecd
-#docker
-
-
-##########
-## Chat ##
-##########
-
-irssi
-pidgin
-pidgin-otr
-pidgin-discord
-pidgin-docs
-libpurple-devel
-
-
-
-### Torrent
-transmission
-rtorrent
-
-
-###############
-## Dev tools ##
-###############
-
-clang
-gcc
-gcc-c++
-gcc-arm-linux-gnu
-gcc-c++-arm-linux-gnu
-make
-autoconf
-pkgconfig
-
-
-
-## "Development Tools"
-meld
-nemiver
-manedit
-
-
-
-
-gettext
-diffstat
-colordiff
-doxygen
-patch
-patchutils
-expect
-highlight
-lcov
-rcs
-robodoc
-scanmem
-
-
-## Security tools
-
-nmap
-wireshark
-libpcap
-libpcap-devel
-bind-utils
-traceroute
-
-#amass
-#dig
-wireshark
-#sqlmap
-#armitage
-# pentestframework/ptf/metasploit?
-# ida/olly?
-gdb
-# hashcat/jtr
-# zap
-# fiddler
-# burp?
-
-qt5
-qt5-devel
-qt5-designer
-
-glade3
-
-httpd
-tomcat
-nginx
-
-
-## Devops 
-ansible
-jenkins
-
-
-
-flatpak
-cmatrix
-
-
 ######################
 ## Game development ##
 ######################
 
 godot
+
 freeglut
 freeglut-devel
+
 SFML
 SFML-devel
+
+SDL2
 SDL2-devel
+SDL2_gfx
 SDL2_gfx-docs
 SDL2_gfx-devel
+SDL2_ttf
 SDL2_ttf-devel
+SDL2_image
 SDL2_image-devel
+SDL2_mixer
 SDL2_mixer-devel
+SDL2_net
 SDL2_net-devel
-
-
-####################
-## Graphics tools ##
-####################
-
-gimp
-kolourpaint
-inkscape
-blender
-
-#################
-## Audio tools ##
-#################
-audacity
-ardour5
-rhythmbox
-
-
-##########
-## Misc ##
-##########
-
-figlet
-gpg
-
-
-####################
-## Text-to-speech ##
-####################
-
-espeak-ng
-espeak-ng-devel
-espeak-ng-doc
-espeak-ng-vim
 
 
 %end
