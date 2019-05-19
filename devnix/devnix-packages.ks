@@ -412,7 +412,7 @@ blender
 #################
 audacity
 ardour5
-rhyhtmbox
+rhythmbox
 
 
 ####################
