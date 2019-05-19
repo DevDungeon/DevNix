@@ -192,8 +192,6 @@ nodejs-docs
 nodejs-yarn
 nodejs-typescript
 nodejs-sqlite3
-nodejs-express
-nodejs-express-session
 nodejs-discord-js
 
 
@@ -383,8 +381,6 @@ freeglut
 freeglut-devel
 SFML
 SFML-devel
-derelict-SFML2
-derelict-SFML2-devel
 SDL2-devel
 SDL2_gfx-docs
 SDL2_gfx-devel
