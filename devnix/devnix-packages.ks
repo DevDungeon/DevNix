@@ -1,10 +1,9 @@
 %packages
 
 
-
-#################
-## Basic tools ##
-#################
+#######################
+## Basic Linux tools ##
+#######################
 
 util-linux-user
 util-linux
@@ -36,7 +35,7 @@ netpbm-progs
 syslinux
 syslinux-perl
 livecd-tools
-fedora-kicstarts
+fedora-kickstarts
 mediawriter
 
 
@@ -229,12 +228,7 @@ nasm
 nasm-doc
 
 
-##########
-## Misc ##
-##########
 
-figlet
-gpg
 
 
 #########################
@@ -369,6 +363,8 @@ httpd
 tomcat
 nginx
 
+
+## Devops 
 ansible
 jenkins
 
@@ -413,6 +409,14 @@ blender
 audacity
 ardour5
 rhythmbox
+
+
+##########
+## Misc ##
+##########
+
+figlet
+gpg
 
 
 ####################
