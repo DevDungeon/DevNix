@@ -43,7 +43,7 @@ enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'da
 logo-always-visible=true
 logo-border=20
 logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
-logo-size=7
+logo-size=10
 FOE
 
 
@@ -111,7 +111,9 @@ show-delete-permanently=true
 show-hidden=true
 sort-directories-first=true
 
-## Gedit
+###########
+## Gedit ##
+###########
 
 [org/gnome/gedit/preferences/ui]
 side-panel-visible=true
@@ -130,6 +132,9 @@ use-default-font=false
 
 [org/gnome/gedit/plugins]
 active-plugins=['docinfo', 'modelines', 'filebrowser', 'time', 'externaltools', 'quickhighlight']
+
+[org/gnome/gedit/plugins/filebrowser]
+filter-mode=['']
 
 ## Misc
 

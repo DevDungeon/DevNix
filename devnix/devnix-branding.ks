@@ -77,11 +77,11 @@ EOF
 # https://www.freedesktop.org/software/systemd/man/os-release.html
 cat > /usr/lib/os-release <<FOE
 NAME=DevNix
-VERSION="0 (Workstation Edition)"
+VERSION="30 (Workstation Edition)"
 ID=devnix
-VERSION_ID=0
+VERSION_ID=30
 OS=DevNix
-VER=0
+VER=30
 VERSION_CODENAME="Primo"
 PLATFORM_ID="platform:f30"
 PRETTY_NAME="DevNix Workstation"
@@ -98,7 +98,7 @@ VARIANT_ID=workstation
 FOE
 
 cat > /usr/lib/fedora-release <<FOE
-DevNix release 0
+DevNix release 30
 FOE
 
 

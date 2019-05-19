@@ -17,7 +17,7 @@ python3-paramiko
 python3-sphinx
 python3-sphinx_rtd_theme
 python3-gunicorn
-python3-urwid
+
 python3-selenium
 python3-beautifulsoup4
 python3-django
@@ -25,7 +25,8 @@ python3-flask
 python3-pylint
 python3-certbot
 python3-gunicorn
-python3-ipython
+python3-bpython
+python3-urwid
 python3-scapy
 python3-scrapy
 

@@ -2,7 +2,11 @@
 
 ## JavaScript
 nodejs
+nodejs-devel
 nodejs-docs
+
+nodejs-express
+nodejs-express-session
 
 nodejs-typescript
 nodejs-ansi
@@ -24,6 +28,7 @@ nodejs-discord-js
 #npm install -g @vue/cli
 #npm install -g create-react-app
 #npm install -g cordova
-#npm install -g electron
-#
+#sudo npm install -g electron --unsafe-perm=true
+#npm install -g express-generator
+
 #%end

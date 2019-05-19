@@ -63,6 +63,7 @@ evolution
 ## Virtualization
 gnome-boxes
 virt-manager
+vagrant
 
 ## Electronics
 arduino
@@ -138,9 +139,13 @@ mutt
 vifm
 mc
 
+codeblocks
+
 ## Dev tools
 gcc
 gcc-c++
+gcc-arm-linux-gnu
+gcc-c++-arm-linux-gnu
 make
 autoconf
 pkgconfig
@@ -212,8 +217,15 @@ gnome-builder
 flatpak
 cmatrix
 
+
 freeglut
+freeglut-devel
+SFML
+SFML-devel
+derelict-SFML2
+derelict-SFML2-devel
 godot
+
 gimp
 kolourpaint
 inkscape
