@@ -3,11 +3,8 @@
 %include devnix-packages.ks
 
 %include devnix-python.ks
-%include devnix-nodejs.ks
 %include devnix-ruby.ks
-%include devnix-java.ks
-%include devnix-php.ks
-%include devnix-golang.ks
+
 
 %include devnix-dotfiles.ks
 %include devnix-fonts.ks

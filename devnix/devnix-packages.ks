@@ -1,43 +1,87 @@
 %packages
 
-# This package breaks build when trying to build fedora-disk
-# so exclude it. Does not affect fedora-live-workstation which
-# is the desired build target anyway.
-#-bcm283x-firmware
 
+
+#################
+## Basic tools ##
+#################
 
 util-linux-user
 util-linux
 yum-utils
 
-## Disk tools
+
+################
+## Disk tools ##
+################
+
 blivet-gui
 gparted
 
-## Stuff for building the images
-# for pngtopnm to make .lss files
+
+###################
+## File managers ##
+###################
+
+nautilus
+vifm
+mc
+
+
+##########################
+## For building distros ##
+##########################
+
 netpbm-progs
-# for ppmtolss16 to make .lss files
 syslinux
 syslinux-perl
 livecd-tools
+fedora-kicstarts
+mediawriter
 
-## Shells
+
+###########################
+## For customizing Gnome ##
+###########################
+
+gnome-shell-extension-dash-to-dock
+gnome-tweak-tool
+dconf-editor
+
+
+############
+## Shells ##
+############
+
 zsh
 fish
 
-## Editors
+
+###########################
+## Terminal multiplexing ##
+###########################
+
+tmux
+screen
+
+
+#################
+## Editors/IDE ##
+#################
+
 vim
 gvim
 neovim
 nano
 emacs
+codeblocks
+gnome-builder
 
-## Terminal multiplexing
-tmux
-screen
 
-## Version control
+#####################
+## Version control ##
+#####################
+
 git
 bzr
 cvs
@@ -45,57 +89,168 @@ mercurial
 gitg
 subversion
 
-## Browsers
+
+##########
+## Web  ##
+##########
+
 links
 lynx
 firefox
-#mozilla-https-everywhere
-#mozilla-noscript
-#mozilla-adblockplus
 chromium
 chromedriver
-chrome-remote-desktop
+curl
+wget
 
-## Internet
+##############
+## ftp/sftp ##
+##############
+
+ftp
+lftp
 filezilla
+
+
+###########
+## Email ##
+###########
+
+mutt
 evolution
 
-## Virtualization
+####################
+## Virtualization ##
+####################
+
 gnome-boxes
 virt-manager
 vagrant
 
-## Electronics
+
+
+
+#################
+## Electronics ##
+#################
+
 arduino
 fritzing
 
 
+###########
+## Lisps ##
+###########
+
+clisp
+clisp-devel
+guile
+guile-lib
+guile-devel
 
 
+########
+## Go ##
+########
 
-gpg
-#keepass
+golang
+golang-docs
 
 
-## Rust
+##########
+## Java ##
+##########
+
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
+java-1.8.0-openjdk-openjfx
+java-1.8.0-openjdk-openjfx-devel
+java-1.8.0-openjdk-src
+java-1.8.0-openjdk-javadoc
+
+ant
+ant-javadoc
+maven
+maven-javadoc
+gradle
+
+#java-11-openjdk
+#java-11-openjdk-headless
+#java-11-openjdk-devel
+#java-11-openjdk-src
+#java-11-openjdk-javadoc
+
+clojure
+scala
+
+
+################
+## JavaScript ##
+################
+
+nodejs
+nodejs-devel
+nodejs-docs
+nodejs-yarn
+nodejs-typescript
+nodejs-sqlite3
+nodejs-express
+nodejs-express-session
+nodejs-discord-js
+
+
+#########
+## PHP ##
+#########
+
+php
+php-devel
+composer
+phpdoc
+php-pgsql
+php-mysqlnd
+drupal7
+drupal8
+drush
+wordpress
+
+
+##########
+## Rust ##
+##########
+
 cargo
 
-## Assembly
+
+##############
+## Assembly ##
+##############
+
 nasm
 nasm-doc
 
 
+##########
+## Misc ##
+##########
+
 figlet
+gpg
 
 
-## For VSCode building
+#########################
+## For VSCode building ##
+#########################
+
 libXt-devel
 libXScrnSaver
 libxkbfile-devel
 libsecret-devel
 
-## For Electron building
-clang
+
+###########################
+## For Electron building ##
+###########################
+
 dbus-devel
 gtk3-devel
 libnotify-devel
@@ -110,38 +265,46 @@ GConf2-devel
 nss-devel
 python-dbusmock
 
-## For GitHub desktop building?
 
+###############
+## Databases ##
+###############
 
-## Databases
 mariadb-server
 postgresql-server
 sqlite
 sqlite-doc
 sqlite-devel
-derby
-derby-javadoc
+#derby
+#derby-javadoc
 
 ## Docker breaks the auto login on livecd
 #docker
 
-## Chat
+
+##########
+## Chat ##
+##########
+
+irssi
 pidgin
 pidgin-otr
 pidgin-discord
 pidgin-docs
 libpurple-devel
 
-## CLI apps
-irssi
+
+
+### Torrent
+transmission
 rtorrent
-mutt
-vifm
-mc
 
-codeblocks
 
-## Dev tools
+###############
+## Dev tools ##
+###############
+
+clang
 gcc
 gcc-c++
 gcc-arm-linux-gnu
@@ -150,18 +313,15 @@ make
 autoconf
 pkgconfig
 
-SDL2-devel
-SDL2_gfx-docs
-SDL2_gfx-devel
-SDL2_ttf-devel
-SDL2_image-devel
-SDL2_mixer-devel
-SDL2_net-devel
+
 
 ## "Development Tools"
 meld
 nemiver
 manedit
+
+
+
 
 gettext
 diffstat
@@ -213,38 +373,56 @@ ansible
 jenkins
 
 
-gnome-builder
+
 flatpak
 cmatrix
 
 
+######################
+## Game development ##
+######################
+
+godot
 freeglut
 freeglut-devel
 SFML
 SFML-devel
 derelict-SFML2
 derelict-SFML2-devel
-godot
+SDL2-devel
+SDL2_gfx-docs
+SDL2_gfx-devel
+SDL2_ttf-devel
+SDL2_image-devel
+SDL2_mixer-devel
+SDL2_net-devel
+
+
+####################
+## Graphics tools ##
+####################
 
 gimp
 kolourpaint
 inkscape
 blender
 
+#################
+## Audio tools ##
+#################
 audacity
 ardour5
+rhyhtmbox
+
+
+####################
+## Text-to-speech ##
+####################
 
 espeak-ng
 espeak-ng-devel
 espeak-ng-doc
 espeak-ng-vim
 
-# https://ibotpeaches.github.io/Apktool/install/
-# https://github.com/pxb1988/dex2jar/releases
-# https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
-
 
 %end
-
-
-# codeblocks?

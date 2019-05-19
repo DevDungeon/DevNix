@@ -41,12 +41,6 @@ rubygem-pry
 rubygem-pry-doc
 rubygem-tk
 rubygem-tk-doc
-rubygem-selenium-webdriver
-rubygem-selenium-webdriver-doc
-rubygem-jekyll
-rubygem-jekyll-doc
-rubygem-jekyll-toc
-rubygem-jekyll-toc-doc
 
 rubygem-gtk3
 rubygem-gtk3-devel

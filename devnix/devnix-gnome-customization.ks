@@ -1,14 +1,3 @@
-%packages
-
-gnome-shell-extension-dash-to-dock
-gnome-tweak-tool
-dconf-editor
-
-%end
-
-
-
-
 
 %post  --erroronfail
 
@@ -25,10 +14,6 @@ file:///usr/src/ /usr/src/
 file:///usr/share/doc/ /usr/share/doc
 EOF
 
-
-###########################
-## Application favorites ##
-###########################
 
 
 
@@ -65,7 +50,9 @@ FOE
 
 cat > /etc/dconf/db/local.d/00-misc <<FOE
 
-## Gnome terminal
+####################
+## Gnome terminal ##
+####################
 
 [org/gnome/terminal/legacy]
 default-show-menubar=false
@@ -91,7 +78,9 @@ use-theme-colors=false
 #icon-theme='breeze-dark'
 
 
-## Nautilus
+##############
+## Nautilus ##
+##############
 
 [org/gnome/nautilus/icon-view]
 default-zoom-level='small'
@@ -111,6 +100,7 @@ show-delete-permanently=true
 show-hidden=true
 sort-directories-first=true
 
+
 ###########
 ## Gedit ##
 ###########
@@ -123,7 +113,7 @@ auto-indent=true
 bracket-matching=true
 display-line-numbers=true
 display-overview-map=true
-editor-font='Hack 12'
+editor-font='Hack 11'
 highlight-current-line=true
 insert-spaces=true
 scheme='cobalt'
@@ -136,7 +126,9 @@ active-plugins=['docinfo', 'modelines', 'filebrowser', 'time', 'externaltools', 
 [org/gnome/gedit/plugins/filebrowser]
 filter-mode=['']
 
-## Misc
+#############
+## Desktop ##
+#############
 
 [org/gnome/desktop/interface]
 clock-format='12h'
@@ -151,15 +143,20 @@ dock-fixed=true
 
 
 
+
+
+###########################
+## Application favorites ##
+###########################
+
+[org/gnome/shell]
+favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit.desktop', 'anaconda.desktop']
+
+
 #########################
 ## Application folders ##
 #########################
 
-## Favorites
-[org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit.desktop', 'anaconda.desktop']
-
-## Folders
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks']
 
