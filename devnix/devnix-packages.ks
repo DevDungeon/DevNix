@@ -15,7 +15,6 @@ flatpak
 ################
 
 blivet-gui
-gparted
 
 
 ###################
@@ -24,7 +23,6 @@ gparted
 
 nautilus
 vifm
-mc
 
 
 ##########################
@@ -62,7 +60,6 @@ tcl
 ###########################
 
 tmux
-screen
 
 
 #################
@@ -71,9 +68,6 @@ screen
 
 vim
 gvim
-neovim
-nano
-emacs
 codeblocks
 gnome-builder
 
@@ -86,10 +80,7 @@ git
 bzr
 cvs
 mercurial
-gitg
 subversion
-
-
 
 
 ####################
@@ -117,18 +108,14 @@ sqlitebrowser
 derby
 derby-javadoc
 
-sqliteodbc
-mysql-connector-odbc
-postgresql-odbc
-
 vsqlite++
 vsqlite++-devel
 vsqlite++-doc
 sqlite-tcl
 
-
-
-
+sqliteodbc
+mysql-connector-odbc
+postgresql-odbc
 
 
 ##########
@@ -221,9 +208,8 @@ libpurple-devel
 ## Torrent ##
 #############
 
-transmission
+ktorrent
 rtorrent
-
 
 
 
@@ -237,6 +223,9 @@ libpcap
 libpcap-devel
 bind-utils
 traceroute
+jpcap
+jpcap-javadoc
+dnscap
 
 
 #########
@@ -269,11 +258,14 @@ jetty-javadoc
 ############
 
 ansible
+ansible-doc
 
 jenkins
 jenkins-javadoc
 jenkins-cli
 jenkins-webapp
+jenkins-credentials-plugin
+jenkins-credentials-plugin-javadoc
 jenkins-ant-plugin
 jenkins-ant-plugin-javadoc
 jenkins-junit-plugin
@@ -301,9 +293,11 @@ kolourpaint
 inkscape
 blender
 
+
 #################
 ## Audio tools ##
 #################
+
 audacity
 ardour5
 rhythmbox
@@ -359,6 +353,7 @@ robodoc
 scanmem
 
 poco-devel
+poco-doc
 
 ###########
 ## Lisps ##
@@ -369,9 +364,9 @@ clisp-devel
 guile
 guile-lib
 guile-devel
-racket
-racket-devel
-racket-doc
+#racket
+#racket-devel
+#racket-doc
 
 
 ########
@@ -401,11 +396,11 @@ maven-shade-plugin
 maven-shade-plugin-javadoc
 gradle
 
-java-latest-openjdk
-java-latest-openjdk-src
-java-latest-openjdk-devel
-java-latest-openjdk-jmods
-java-latest-openjdk-javadoc
+#java-latest-openjdk
+#java-latest-openjdk-src
+#java-latest-openjdk-devel
+#java-latest-openjdk-jmods
+#java-latest-openjdk-javadoc
 
 
 clojure
@@ -507,10 +502,9 @@ python3-django
 python3-flask
 python3-pylint
 python3-certbot
-python3-gunicorn
 python3-bpython
 python3-urwid
-
+python3-pcapy
 python3-scapy
 python3-scrapy
 
@@ -518,8 +512,8 @@ python3-scrapy
 ## Haskell ##
 #############
 
-ghc
-ghc-manual
+#ghc
+#ghc-manual
 
 ##########
 ## .NET ##
@@ -559,18 +553,12 @@ jruby
 jruby-devel
 jruby-javadoc
 
-
 rubygem-bundler
 #rubygem-bundler-doc#Broken
 rubygem-rake
 rubygem-rake-doc
 rubygem-rdoc
 #rubygem-rdoc-doc#Broken
-
-rubygem-glu
-rubygem-glu-doc
-rubygem-glut
-rubygem-glut-doc
 
 ruby-ncurses
 rubygem-colorize
@@ -588,8 +576,10 @@ rubygem-pg
 rubygem-pg-doc
 
 rubygem-irb
+
 rubygem-pry
 rubygem-pry-doc
+
 rubygem-tk
 rubygem-tk-doc
 
@@ -599,16 +589,19 @@ rubygem-gtk3-doc
 
 rubygem-rails
 rubygem-rails-doc
+
 rubygem-sinatra
 rubygem-sinatra-doc
 
 rubygem-nokogiri
 rubygem-nokogiri-doc
 
-
 rubygem-opengl
 rubygem-opengl-doc
-
+rubygem-glu
+rubygem-glu-doc
+rubygem-glut
+rubygem-glut-doc
 
 #########
 ## PHP ##
