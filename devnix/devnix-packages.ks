@@ -9,7 +9,7 @@ util-linux-user
 util-linux
 #yum-utils # deprecated
 flatpak
-incrond
+incron
 
 ################
 ## Disk tools ##
