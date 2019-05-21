@@ -7,8 +7,9 @@
 
 util-linux-user
 util-linux
-yum-utils
+#yum-utils # deprecated
 flatpak
+incrond
 
 ################
 ## Disk tools ##
@@ -35,6 +36,19 @@ syslinux-perl
 livecd-tools
 fedora-kickstarts
 mediawriter
+
+
+###################
+## RPM Packaging ##
+###################
+
+rpkg
+rpmdevtools
+rpm-build
+rpm-devel
+rpmlint
+debbuild
+alien
 
 
 ###########################
@@ -226,6 +240,7 @@ traceroute
 jpcap
 jpcap-javadoc
 dnscap
+tor
 
 
 #########
@@ -318,8 +333,22 @@ espeak-ng-vim
 ##########
 
 figlet
-gpg
 cmatrix
+cowsay
+fortune-mod
+keepass
+
+#########
+## GPG ##
+#########
+
+gpg
+python3-gnupg
+python3-gpg
+gpgme
+gpgme-devel
+gpgmepp
+gpgmepp-devel
 
 
 ###############
@@ -395,6 +424,15 @@ maven-javadoc
 maven-shade-plugin
 maven-shade-plugin-javadoc
 gradle
+
+maven-ant-plugin
+maven-ear-plugin
+maven-ejb-plugin
+maven-war-plugin
+maven-jar-plugin
+maven-gpg-plugin
+maven-gpg-plugin-javadoc
+
 
 #java-latest-openjdk
 #java-latest-openjdk-src
@@ -473,6 +511,7 @@ nodejs-yarn
 nodejs-typescript
 nodejs-sqlite3
 nodejs-discord-js
+nodejs-packaging
 
 
 ############
@@ -507,6 +546,10 @@ python3-urwid
 python3-pcapy
 python3-scapy
 python3-scrapy
+python3-rpm
+python3-pyrpm
+python3-rpkg
+
 
 #############
 ## Haskell ##
@@ -558,6 +601,8 @@ rubygem-bundler
 rubygem-rake
 rubygem-rake-doc
 rubygem-rdoc
+rubygem-guard
+rubygem-guard-doc
 #rubygem-rdoc-doc#Broken
 
 ruby-ncurses
@@ -661,6 +706,13 @@ SDL2_mixer
 SDL2_mixer-devel
 SDL2_net
 SDL2_net-devel
+
+bullet
+bullet-devel
+bullet-devel-doc
+bullet-extras
+bullet-extras-devel
+
 
 
 %end

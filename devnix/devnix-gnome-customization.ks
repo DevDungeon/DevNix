@@ -148,7 +148,7 @@ use-default-font=false
 active-plugins=['docinfo', 'modelines', 'filebrowser', 'time', 'externaltools', 'quickhighlight']
 
 [org/gnome/gedit/plugins/filebrowser]
-filter-mode=['']
+filter-mode=[]
 
 #############
 ## Desktop ##
