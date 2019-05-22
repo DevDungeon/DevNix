@@ -715,4 +715,11 @@ bullet-extras-devel
 
 
 
+
+hashcat
+hashcat-devel
+hashcat-doc
+gambas3-ide
+
+
 %end

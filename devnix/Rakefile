@@ -1,0 +1,7 @@
+task :default => [:build]
+
+
+task :build do
+  `sudo livecd-creator devnix.ks --fslabel=DevNix-Workstation-x86_64`
+end
+
