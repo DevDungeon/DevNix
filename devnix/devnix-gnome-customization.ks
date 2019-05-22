@@ -188,23 +188,23 @@ apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-dra
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 name='Utilities'
-apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop']
+apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop']
 
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
-apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'vifm.desktop', 'links.desktop', 'vifm.desktop']
+apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'links.desktop', 'vifm.desktop', 'lftp.desktop', 'xterm.desktop']
 #rtorrent
 #irssi
 
 [org/gnome/desktop/app-folders/folders/Web]
 name='Web'
-apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop']
+apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop', 'lftp.desktop']
 ##rtorrent
 #irssi
 
 [org/gnome/desktop/app-folders/folders/Editors]
 name='Editors/IDE'
-apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop']
+apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop', 'codeblocks.desktop', 'eclipse.desktop', 'idle3.desktop', 'org.kde.kate.desktop', 'code.desktop', 'monodevelop.desktop', 'gambas3.desktop', 'atom.desktop', 'netbeans.desktop']
 #netbeans
 
 [org/gnome/desktop/app-folders/folders/Graphics]
@@ -213,8 +213,10 @@ apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint
 
 [org/gnome/desktop/app-folders/folders/Development]
 name='Development'
-apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdubsviewer.desktop', 'qt5-linguist.desktop']
+apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop']
 
+# docs
+# repls
 #irb
 #bpython-urwid
 #gdb
@@ -233,7 +235,7 @@ apps=['org.gnome.Boxes.desktop', 'virt-manager.desktop']
 
 [org/gnome/desktop/app-folders/folders/Disks]
 name='Disks'
-apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop']
+apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'vifm.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/app-folders/folders/Security]
 name='Security'
@@ -243,6 +245,20 @@ apps=['wireshark.desktop']
 
 
 
+# Databases
+#sqlitebrowser.desktop
+#mysql.desktop (right
+#postgres.desktop (right click -> start service/stop service/launch client)
+#derby (right click start/stop)
+# mysql workbench
+#DataGrip
+
+
+# Web servers
+# nginx
+# tomcat
+# apache httpd
+# uwsgi
 
 
 

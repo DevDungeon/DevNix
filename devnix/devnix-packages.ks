@@ -84,6 +84,8 @@ vim
 gvim
 codeblocks
 gnome-builder
+nano
+emacs
 
 
 #####################
@@ -265,8 +267,9 @@ nginx
 uwsgi
 tomcat
 tomcat-javadoc
-jetty
-jetty-javadoc
+#jetty
+#jetty-javadoc
+#glassfish
 
 ############
 ## Devops ##
@@ -719,7 +722,10 @@ bullet-extras-devel
 hashcat
 hashcat-devel
 hashcat-doc
-gambas3-ide
 
+#gambas3-ide
+
+dialog
+gtkdialog
 
 %end

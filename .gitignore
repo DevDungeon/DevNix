@@ -2,3 +2,4 @@
 /spin-kickstarts-0.19.2.tar.gz
 *.iso
 id_rsa_deploy_key
+*.swp

@@ -20,7 +20,15 @@ cp resources/skel/pypirc $INSTALL_ROOT/etc/skel/.pypirc
 # TODO REMOVE
 git clone https://github.com/robbyrussell/oh-my-zsh $INSTALL_ROOT/etc/skel/.oh-my-zsh
 
+
+
+
 # maven m2 settings example TODO
+
+
+
+#vscode settings
+
 
 %end
 
