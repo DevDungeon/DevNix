@@ -164,9 +164,10 @@ cp resources/anaconda/sidebar-logo.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/
 cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash.png
 cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
 
+sed -i /usr/share/anaconda/anaconda-gtk.css s/@define-color product_bg_color @fedora;/@define-color product_bg_color #222222;/
+
 # TODO do this once and store the .lss in repo # yum install netpbm-progs syslinux-perl
 #pngtopnm $INSTALL_ROOT/usr/share/anaconda/boot/splash.png | ppmtolss16 > $INSTALL_ROOT/usr/share/anaconda/boot/splash.lss
-
 
 #mkdir -p $INSTALL_ROOT/usr/share/firstboot/themes/generic
 #cp resources/first_boot/themes/devnix/firstboot-left.png $INSTALL_ROOT/usr/share/firstboot/themes/generic
@@ -218,6 +219,8 @@ cp resources/icons/devnix-lettermark-480.png $INSTALL_ROOT/usr/share/icons/hicol
 cp resources/icons/devnix-lettermark-480.png $INSTALL_ROOT/usr/share/icons/hicolor/480x480/apps/devnix-lettermark.png
 cp resources/icons/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/anaconda.png
 cp resources/icons/devnix-lettermark-512.png $INSTALL_ROOT/usr/share/icons/hicolor/512x512/apps/devnix-lettermark.png
+
+cp resources/icons/devnix-lettermark-128.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo-small.png
 
 rm $INSTALL_ROOT/usr/share/icons/hicolor/scalable/apps/anaconda.svg
 

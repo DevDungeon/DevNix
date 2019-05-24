@@ -82,20 +82,21 @@ picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 default-show-menubar=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='#222222'
-bold-color='rgb(30,150,150)'
-bold-color-same-as-fg=false
-bold-is-bright=true
-cursor-background-color='rgb(200, 25, 200)'
+highlight-colors-set=true
+scrollback-unlimited=true
 cursor-colors-set=true
 delete-binding='ascii-delete'
+bold-color-same-as-fg=false
+bold-is-bright=true
+use-theme-colors=false
+background-color='#222222'
+bold-color='rgb(30,150,150)'
 foreground-color='rgb(0,255,255)'
+cursor-background-color='rgb(200, 25, 200)'
 highlight-background-color='rgb(26,157,157)'
-highlight-colors-set=true
 highlight-foreground-color='rgb(20,53,50)'
 palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(30,93,94)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(0,135,135)', 'rgb(255,255,0)']
-scrollback-unlimited=true
-use-theme-colors=false
+
 
 #[org/gnome/desktop/interface]
 #gtk-theme='Adwaita-dark'
@@ -220,6 +221,7 @@ apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nem
 #irb
 #bpython-urwid
 #gdb
+#mpg123
 
 [org/gnome/desktop/app-folders/folders/Audio]
 name='Audio'
@@ -242,7 +244,7 @@ name='Security'
 apps=['wireshark.desktop']
 #nmap
 #zap
-
+#hashcat
 
 
 # Databases
@@ -255,11 +257,11 @@ apps=['wireshark.desktop']
 
 
 # Web servers
-# nginx
-# tomcat
-# apache httpd
-# uwsgi
-
+# nginx start/stop/logs/config/
+# tomcat start/stop/logs/config/
+# apache httpd start/stop/logs/config
+# uwsgi start/stop/logs/config
+# Places->/var/www
 
 
 FOE

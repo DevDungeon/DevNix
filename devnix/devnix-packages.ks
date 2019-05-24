@@ -319,6 +319,9 @@ blender
 audacity
 ardour5
 rhythmbox
+mpg123
+mpg123-devel
+libsndfile-devel
 
 
 ####################
