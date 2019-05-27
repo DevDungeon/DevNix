@@ -28,6 +28,17 @@ cp resources/dist_keys/git_deploy_key $INSTALL_ROOT/usr/src/DevNix/id_rsa_deploy
 tar xzf resources/softlib/geckodriver-v0.24.0-linux64.tar.gz
 mv geckodriver $INSTALL_ROOT/usr/bin/
 
+
+## Clone all DevDungeon github repos
+mkdir -p $INSTALL_ROOT/usr/src/DevDungeon/
+for reponame in $(cat resources/devdungeon-repos.txt)
+do
+  git clone https://github.com/DevDungeon/$reponame $INSTALL_ROOT/usr/src/DevDungeon/$reponame
+done
+
+
+
+
 %end
 
 

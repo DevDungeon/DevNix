@@ -1,0 +1,41 @@
+[Desktop Entry]
+
+Name=
+Exec=
+Terminal=true
+Icon=org.gnome.Terminal
+
+
+
+console
+start/stop
+logs
+config
+
+
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=
+Name=
+Comment=
+Exec=
+Terminal=false
+#StartupWMClass=name-of-app-window
+#Categories=Development;Education;
+
+
+
+Actions=launch1;launch2;launch3
+
+[Desktop Action launch1]
+Name=Launch normally
+Exec=/path/to/launch
+
+[Desktop Action launch2]
+Name=Launch with alt options
+Exec=/path/to/launch --alts
+
+[Desktop Action launch3]
+Name=Launch with alt options again
+Exec=/path/to/launch --otheralts

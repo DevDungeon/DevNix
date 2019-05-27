@@ -9,7 +9,7 @@ Here is some recommended software:
 - Atom
 - MySQL Workbench
 - Node.js packages electron/angular/vue/nativescript/tslint/
-- Python3 packages pyttsx python-aiml
+- Python3 packages pyttsx python-aiml pyinstaller
 - Go packages
 - Ruby packages
 

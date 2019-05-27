@@ -1,0 +1,38 @@
+[Desktop Entry]
+
+# Application, Links (URL), or Directory (sub-group for applications)
+Type=Application
+
+Encoding=UTF-8
+Icon=/path/to/launch_icon.png
+Name=MySpecificApp
+GenericName=SomethingGeneric
+Comment=This is a tooltip
+Exec=/thing/to/execute
+
+# Should run in a terminal?
+Terminal=false
+
+# Name of the window. Optional. See below.
+# Allows windows to stack
+# If this does not match, duplicate icons may show up in your dock
+StartupWMClass=name-of-app-window
+
+# Optional categories
+Categories=Development;Education;
+
+
+# Optional actions (right click options)
+Actions=launch1;launch2;launch3
+
+[Desktop Action launch1]
+Name=Launch normally
+Exec=/path/to/launch
+
+[Desktop Action launch2]
+Name=Launch with alt options
+Exec=/path/to/launch --alts
+
+[Desktop Action launch3]
+Name=Launch with alt options again
+Exec=/path/to/launch --otheralts

@@ -3,7 +3,6 @@
 
 
 
-
 ## Apache Netbeans
 wget https://www-eu.apache.org/dist/incubator/netbeans/incubating-netbeans/incubating-11.0/incubating-netbeans-11.0-bin.zip
 copy over
@@ -51,5 +50,19 @@ create launcher
 https://templeos.org/Downloads/TempleOS.ISO (16mb)
 wget https://templeos.org/Downloads/TempleOS.ISO -O /opt/TempleOS.iso
 - create a virtual machine + launcher in app menu
+
+## mysql workbench?
+## Rabbitmq?
+# Monodevelop + .net (broken)
+#apk decompiler
+#apktool
+#dex2jar
+#https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
+#sqlmap
+#armitage
+#pentestframework/ptf/metasploit?
+#ida/olly?
+#cuckoo
+
 
 %end

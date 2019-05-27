@@ -3,6 +3,8 @@
 mkdir -p $INSTALL_ROOT/usr/local/share/backgrounds
 cp resources/wallpaper.png $INSTALL_ROOT/usr/local/share/backgrounds/wallpaper.png
 
+# Copy all desktop launchers
+cp resources/applications/*.desktop $INSTALL_ROOT/usr/share/applications/
 
 %end
 
@@ -181,92 +183,99 @@ favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit
 #########################
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks']
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks', 'Database', 'WebServer']
 
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
+categories=['Office']
 apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop']
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 name='Utilities'
-apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop']
+categories=['Utility', 'Utilities']
+apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop', 'org.gnome.Software.desktop']
 
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
-apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'links.desktop', 'vifm.desktop', 'lftp.desktop', 'xterm.desktop']
-#rtorrent
-#irssi
+categories=['Terminal', 'Shell']
+apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'links.desktop', 'vifm.desktop', 'lftp.desktop', 'xterm.desktop', 'nano.desktop', 'rtorrent.desktop', 'irssi.desktop', 'zsh.desktop', 'fish.desktop', 'bash.desktop']
 
 [org/gnome/desktop/app-folders/folders/Web]
 name='Web'
-apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop', 'lftp.desktop']
-##rtorrent
-#irssi
+categories=['Web', 'Email', 'Browser']
+apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop', 'lftp.desktop', 'rtorrent.desktop', 'irssi.desktop']
 
 [org/gnome/desktop/app-folders/folders/Editors]
 name='Editors/IDE'
-apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop', 'codeblocks.desktop', 'eclipse.desktop', 'idle3.desktop', 'org.kde.kate.desktop', 'code.desktop', 'monodevelop.desktop', 'gambas3.desktop', 'atom.desktop', 'netbeans.desktop']
+categories=['Editor', 'IDE']
+apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop', 'codeblocks.desktop', 'eclipse.desktop', 'idle3.desktop', 'org.kde.kate.desktop', 'code.desktop', 'monodevelop.desktop', 'gambas3.desktop', 'atom.desktop', 'netbeans.desktop', 'nano.desktop']
 #netbeans
 
 [org/gnome/desktop/app-folders/folders/Graphics]
 name='Graphics'
+categories=['graphics', 'image']
 apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint.desktop', 'gimp.desktop', 'org.gnome.Photos.desktop', 'libreoffice-draw', 'org.gnome.Totem.desktop', 'org.gnome.Cheese.desktop']
 
 [org/gnome/desktop/app-folders/folders/Development]
 name='Development'
-apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop']
+categories=['Development', 'Programming']
+apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop']
 
 # docs
 # repls
-#irb
-#bpython-urwid
-#gdb
-#mpg123
+# java/?jshell?
+# figlet
+# gpg 
+# php shell? php server?
+
 
 [org/gnome/desktop/app-folders/folders/Audio]
 name='Audio'
-apps=['audacity.desktop', 'rhythmbox.desktop', 'ardour5.desktop']
+categories=['Audio', 'Sound']
+apps=['audacity.desktop', 'rhythmbox.desktop', 'ardour5.desktop', 'mpg123.desktop']
 
 [org/gnome/desktop/app-folders/folders/Electronics]
 name='Electronics'
+categories=['Electronics']
 apps=['cc.arduino.arduinoide.desktop', 'fritzing.desktop']
 
 [org/gnome/desktop/app-folders/folders/Virtualization]
 name='Virtualization'
+categories=['Virtualization', 'VM']
 apps=['org.gnome.Boxes.desktop', 'virt-manager.desktop']
 
 [org/gnome/desktop/app-folders/folders/Disks]
 name='Disks'
+categories=['Disk']
 apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'vifm.desktop', 'org.gnome.Nautilus.desktop']
+
+
 
 [org/gnome/desktop/app-folders/folders/Security]
 name='Security'
-apps=['wireshark.desktop']
-#nmap
-#zap
-#hashcat
+categories=['Security']
+apps=['wireshark.desktop', 'nmap.desktop', 'hashcat.desktop', 'gpg.desktop']
 
 
-# Databases
-#sqlitebrowser.desktop
-#mysql.desktop (right
-#postgres.desktop (right click -> start service/stop service/launch client)
-#derby (right click start/stop)
-# mysql workbench
-#DataGrip
 
 
-# Web servers
-# nginx start/stop/logs/config/
-# tomcat start/stop/logs/config/
-# apache httpd start/stop/logs/config
-# uwsgi start/stop/logs/config
-# Places->/var/www
+[org/gnome/desktop/app-folders/folders/Database]
+name='Database'
+categories=['Database']
+apps=['sqlitebrowser.desktop', 'mysql.desktop', 'postgres.desktop', 'derby.desktop', 'mysql-workbench.desktop']
+
+
+[org/gnome/desktop/app-folders/folders/WebServers]
+name='Web Servers'
+categories=['Web Server']
+apps=['nfinx.desktop', 'apache2.desktop', 'tomcat.desktop', 'uwsgi.desktop']
+
 
 
 FOE
 
-# Commit all dconf changes
+
+## Commit all dconf changes
 dconf update
 
 %end
