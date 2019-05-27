@@ -1,0 +1,27 @@
+Exect=sh -c "nmap -h; ${SHELL:-bash}"
+
+
+
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Hashcat
+Comment=
+Exec=
+Terminal=true
+Categories=Development;Education;
+
+Actions=launch1;launch2;launch3
+
+[Desktop Action launch1]
+Name=
+Exec=
+
+[Desktop Action launch2]
+Name=
+Exec=
+
+[Desktop Action launch3]
+Name=
+Exec=

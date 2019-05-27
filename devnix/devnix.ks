@@ -39,6 +39,7 @@ done
 
 
 
+
 %end
 
 
@@ -52,6 +53,15 @@ done
 #################################
 
 sed -i "s/\/bin\/bash/\/bin\/zsh/" /etc/default/useradd
+
+######################
+## Sudo no password ##
+######################
+
+cp /etc/sudoers /etc/sudoers.temp
+sed -i "s/^%wheel/\#%wheel/" /etc/sudoers.temp
+sed -i "s/\# %wheel/%wheel/" /etc/sudoers.temp
+mv /etc/sudoers.temp /etc/sudoers -f
 
 
 %end

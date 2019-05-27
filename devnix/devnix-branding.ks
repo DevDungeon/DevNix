@@ -164,7 +164,7 @@ cp resources/anaconda/sidebar-logo.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/
 cp resources/anaconda/splash.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/splash.png
 cp resources/anaconda/topbar-bg.png $INSTALL_ROOT/usr/share/anaconda/pixmaps/topbar-bg.png
 
-sed -i /usr/share/anaconda/anaconda-gtk.css s/@define-color product_bg_color @fedora;/@define-color product_bg_color #222222;/
+sed -i "s/@define-color product_bg_color @fedora;/@define-color product_bg_color \#222222;/" /usr/share/anaconda/anaconda-gtk.css
 
 # TODO do this once and store the .lss in repo # yum install netpbm-progs syslinux-perl
 #pngtopnm $INSTALL_ROOT/usr/share/anaconda/boot/splash.png | ppmtolss16 > $INSTALL_ROOT/usr/share/anaconda/boot/splash.lss

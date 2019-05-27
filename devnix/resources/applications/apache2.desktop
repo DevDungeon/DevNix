@@ -1,38 +1,29 @@
 [Desktop Entry]
-
-# Application, Links (URL), or Directory (sub-group for applications)
 Type=Application
-
 Encoding=UTF-8
-Icon=/path/to/launch_icon.png
-Name=MySpecificApp
-GenericName=SomethingGeneric
-Comment=This is a tooltip
-Exec=/thing/to/execute
-
-# Should run in a terminal?
+Icon=org.gnome.Terminal
+Name=Apache HTTPD
+Exec=sudo systemctl start httpd
 Terminal=false
+Actions=start;stop;restart;logs;configs
 
-# Name of the window. Optional. See below.
-# Allows windows to stack
-# If this does not match, duplicate icons may show up in your dock
-StartupWMClass=name-of-app-window
+[Desktop Action start]
+Name=Start server
+Exec=sudo systemctl start httpd
 
-# Optional categories
-Categories=Development;Education;
+[Desktop Action stop]
+Name=Stop server
+Exec=sudo systemctl stop httpd
 
+[Desktop Action restart]
+Name=Restart server
+Exec=sudo systemctl restart httpd
 
-# Optional actions (right click options)
-Actions=launch1;launch2;launch3
+[Desktop Action logs]
+Name=Logs
+Exec=nautilus admin:///var/log/httpd
 
-[Desktop Action launch1]
-Name=Launch normally
-Exec=/path/to/launch
+[Desktop Action configs]
+Name=Configs
+Exec=nautilus admin:///etc/httpd
 
-[Desktop Action launch2]
-Name=Launch with alt options
-Exec=/path/to/launch --alts
-
-[Desktop Action launch3]
-Name=Launch with alt options again
-Exec=/path/to/launch --otheralts

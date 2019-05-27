@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Derby
+Exec=sudo systemctl start derby
+Terminal=false
+Actions=start;stop;restart;
+
+[Desktop Action start]
+Name=Start server
+Exec=sudo systemctl start derby
+
+[Desktop Action stop]
+Name=Stop server
+Exec=sudo systemctl stop derby
+
+[Desktop Action restart]
+Name=Restart server
+Exec=sudo systemctl restart derby
+

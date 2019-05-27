@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=MariaDB
+Exec=sh -c "psql --help; ${SHELL:-bash}"
+Terminal=true
+Actions=start;stop;restart;
+
+[Desktop Action start]
+Name=Start server
+Exec=sudo systemctl start postgresql
+
+[Desktop Action stop]
+Name=Stop server
+Exec=sudo systemctl stop postgresql
+
+[Desktop Action restart]
+Name=Restart server
+Exec=sudo systemctl restart postgresql
+
