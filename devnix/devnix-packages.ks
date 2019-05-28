@@ -122,7 +122,7 @@ sqlite-devel
 sqlitebrowser
 
 derby
-derby-javadoc
+#derby-javadoc
 
 vsqlite++
 vsqlite++-devel
@@ -487,7 +487,7 @@ springframework
 springframework-javadoc
 
 hibernate-core
-hibernate-javadoc
+#hibernate-javadoc
 
 apache-commons-parent
 apache-commons-cli
@@ -715,7 +715,7 @@ SDL2_net-devel
 
 bullet
 bullet-devel
-bullet-devel-doc
+#bullet-devel-doc
 bullet-extras
 bullet-extras-devel
 
