@@ -5,7 +5,7 @@ NanoPot
 AndroidPortScanner
 KivyBitcoinPriceChecker
 Cordova-GPS-Tool
-NativeScriptAngularGpsTool
+NativeScriptAngularGpsTools
 DiscordRpgBot
 Bug-Bounty-Browser-Extension
 reStructuredText-Documentation-Reference
