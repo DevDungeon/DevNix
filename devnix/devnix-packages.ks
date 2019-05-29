@@ -730,5 +730,6 @@ hashcat-doc
 
 dialog
 gtkdialog
+youtube-dl
 
 %end

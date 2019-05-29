@@ -2,8 +2,6 @@
 export PATH=$PATH:$HOME/NanoBin/bin:$HOME/.rvm/bin:$HOME/bin
 export GOPATH=$HOME
 
-# Plugins (~/.oh-my-zsh/custom/plugins)
-plugins=(git cp ruby rvm bundler yum composer docker pip python vi-mode tmux)
 
 # Zsh Theme
 export ZSH_THEME=flazz
@@ -17,21 +15,27 @@ alias vrcl='vim ~/.vimrc.local'
 alias py='python3'
 alias py2='python2'
 alias py3='python3'
+alias act='source ~/venv/bin/activate'
 alias rb='ruby'
 alias pl='perl'
+
 alias gdif='git diff'
 alias st='git status'
+
 alias spider='scrapy runspider'
+
 alias ydl='youtube-dl'
 alias youtube-x='youtube-dl -x --audio-format vorbis --audio-quality 0'
-alias act='source ~/venv/bin/activate'
+
 alias matrix='cmatrix -C cyan' 
+
+alias dnfi='sudo dnf install'
+alias dnfs='dnf search'
+alias dnfr='sudo dnf remove'
+alias dnfp='dnf provides'
+
 # Load local config before initializing zsh
 source $HOME/.zshrc.local
-
-# Standard Zsh startup
-export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 
 # "Double scp"
 dscp() {

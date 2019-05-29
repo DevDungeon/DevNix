@@ -2,7 +2,7 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=MariaDB
+Name=PostgreSQL
 Exec=sh -c "psql --help; ${SHELL:-bash}"
 Terminal=true
 Actions=start;stop;restart;

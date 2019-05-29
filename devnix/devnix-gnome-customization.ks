@@ -152,7 +152,7 @@ use-default-font=false
 active-plugins=['docinfo', 'modelines', 'filebrowser', 'time', 'externaltools', 'quickhighlight']
 
 [org/gnome/gedit/plugins/filebrowser]
-filter-mode=['']
+filter-mode=['hide-hidden']
 
 #############
 ## Desktop ##
@@ -184,7 +184,7 @@ favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit
 #########################
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks', 'Database', 'WebServer']
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks', 'Database', 'WebServers']
 
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
@@ -194,7 +194,7 @@ apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-dra
 [org/gnome/desktop/app-folders/folders/Utilities]
 name='Utilities'
 categories=['Utility', 'Utilities']
-apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop', 'org.gnome.Software.desktop']
+apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop', 'org.gnome.Software.desktop', 'org.freedesktop.GnomeAbrt.desktop']
 
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
@@ -269,7 +269,7 @@ apps=['sqlitebrowser.desktop', 'mysql.desktop', 'postgres.desktop', 'derby.deskt
 [org/gnome/desktop/app-folders/folders/WebServers]
 name='Web Servers'
 categories=['Web Server']
-apps=['nfinx.desktop', 'apache2.desktop', 'tomcat.desktop', 'uwsgi.desktop']
+apps=['nginx.desktop', 'apache2.desktop', 'tomcat.desktop', 'uwsgi.desktop']
 
 
 

@@ -4,32 +4,39 @@
 %include devnix-dotfiles.ks
 %include devnix-branding.ks
 %include devnix-gnome-customization.ks
-
-
-# These could use some better packaging and updating
 %include devnix-fonts.ks
 #%include devnix-extra-software.ks
 
 
-# Override disk size in fedora-live-workstation.ks so it
-# has enough room to build. Does not indicate size of final iso
-#part / --size 19650 # minimum as of delta6
+###################################################################
+## Override disk size in fedora-live-workstation.ks so it        ## 
+## has enough room to build. Does not indicate size of final iso ##
+###################################################################
+
 part / --size 19750
 
 
 
 %post --nochroot --erroronfail
 
-## Store sources for building images
+#######################################
+## Store sources for building images ##
+#######################################
+
 git clone --branch f30 git@github.com:NanoDano/DevNix $INSTALL_ROOT/usr/src/DevNix
 cp resources/dist_keys/git_deploy_key $INSTALL_ROOT/usr/src/DevNix/id_rsa_deploy_key
 
-## Gecko driver for Firefox and Selenium
+###########################################
+## Gecko driver for Firefox and Selenium ##
+###########################################
+
 tar xzf resources/softlib/geckodriver-v0.24.0-linux64.tar.gz
 mv geckodriver $INSTALL_ROOT/usr/bin/
 
+#######################################
+## Clone all DevDungeon github repos ##
+#######################################
 
-## Clone all DevDungeon github repos
 mkdir -p $INSTALL_ROOT/usr/src/DevDungeon/
 for reponame in $(cat resources/devdungeon-repos.txt)
 do
@@ -41,7 +48,7 @@ done
 ## Zsh prompt ##
 ################
 
-cp resources/prompt_devnix_setup /usr/share/zsh/site-functions/prompt_devnix_setup
+cp resources/prompt_devnix_setup $INSTALL_ROOT/usr/share/zsh/site-functions/
 
 %end
 
