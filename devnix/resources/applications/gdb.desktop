@@ -2,22 +2,9 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=
-Comment=
-Exec=
-Terminal=false
-Categories=Development;Education;
+Name=GDB
+Comment=GNU Debugger
+Exec=gdb
+Terminal=true
 
-Actions=launch1;launch2;launch3
 
-[Desktop Action launch1]
-Name=
-Exec=
-
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=

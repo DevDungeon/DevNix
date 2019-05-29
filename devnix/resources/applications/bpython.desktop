@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Python
+Comment=BPython3
+Exec=bpython3
+Terminal=true
+Categories=Development;
+
+Actions=python3;ipython3;bpython3;
+
+[Desktop Action python3]
+Name=Python 3
+Exec=python3
+
+[Desktop Action ipython3]
+Name=IPython 3
+Exec=ipython3
+
+[Desktop Action bpython3]
+Name=BPython 3
+Exec=bpython3

@@ -2,22 +2,15 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=
-Comment=
-Exec=
-Terminal=false
-Categories=Development;Education;
+Name=GPG
+Comment=GNU Privacy Guard
+Exec=gpg
+Terminal=true
 
-Actions=launch1;launch2;launch3
 
-[Desktop Action launch1]
-Name=
-Exec=
+Actions=help
 
-[Desktop Action launch2]
-Name=
-Exec=
+[Desktop Action help]
+Name=Help
+Exec=sh -c "gpg --help; ${SHELL:-bash}"
 
-[Desktop Action launch3]
-Name=
-Exec=

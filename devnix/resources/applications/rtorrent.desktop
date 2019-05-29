@@ -1,23 +1,16 @@
+
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
-Exec=
+Name=RTorrent
+Comment=RTorrent
+Exec=rtorrent
 Terminal=true
-Categories=Development;Education;
 
-Actions=launch1;launch2;launch3
+Actions=help
 
-[Desktop Action launch1]
+[Desktop Action help]
 Name=
-Exec=
+Exec=sh -c "rtorrent --help; ${SHELL:-bash}"
 
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=

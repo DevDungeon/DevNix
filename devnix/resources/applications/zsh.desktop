@@ -2,22 +2,13 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
-Exec=
+Name=Z Shell
+Comment=Z Shell
+Exec=zsh
 Terminal=true
-Categories=Development;Education;
+Actions=admin
 
-Actions=launch1;launch2;launch3
+[Desktop Action admin]
+Name=Root Shell
+Exec=sudo zsh
 
-[Desktop Action launch1]
-Name=
-Exec=
-
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=

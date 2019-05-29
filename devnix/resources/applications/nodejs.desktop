@@ -2,22 +2,14 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
-Exec=
+Name=Node.js
+Comment=Node.js
+Exec=node
 Terminal=true
-Categories=Development;Education;
 
-Actions=launch1;launch2;launch3
+Actions=help
 
-[Desktop Action launch1]
-Name=
-Exec=
+[Desktop Action help]
+Name=Help
+Exec=sh -c "node --help; ${SHELL:-bash}"
 
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=

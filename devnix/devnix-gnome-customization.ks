@@ -84,13 +84,14 @@ picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 default-show-menubar=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-theme-colors=true
+
 highlight-colors-set=true
 scrollback-unlimited=true
 cursor-colors-set=true
 delete-binding='ascii-delete'
 bold-color-same-as-fg=false
 bold-is-bright=true
-use-theme-colors=false
 background-color='#222222'
 bold-color='rgb(30,150,150)'
 foreground-color='rgb(0,255,255)'

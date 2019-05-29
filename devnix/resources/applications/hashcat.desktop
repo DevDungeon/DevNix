@@ -7,18 +7,4 @@ Name=Hashcat
 Comment=
 Exec=sh -c "hashcat -h; ${SHELL:-bash}"
 Terminal=false
-Categories=Development;Education;
 
-Actions=launch1;launch2;launch3
-
-[Desktop Action launch1]
-Name=
-Exec=
-
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=

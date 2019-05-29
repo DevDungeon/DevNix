@@ -3,22 +3,14 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
+Name=Irssi
+Comment=IRC Chat
 Exec=irssi
 Terminal=true
 
+Actions=help
 
-Actions=launch1;launch2;launch3
-
-[Desktop Action launch1]
+[Desktop Action help]
 Name=
-Exec=
+Exec=sh -c "irssi --help; ${SHELL:-bash}"
 
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=

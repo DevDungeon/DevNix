@@ -2,22 +2,30 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
-Exec=
-Terminal=true
-Categories=Development;Education;
+Name=uWSGI
+Exec=sudo systemctl start uwsgi
+Terminal=false
+Actions=start;stop;restart;configfile;configdir
 
-Actions=launch1;launch2;launch3
+[Desktop Action start]
+Name=Start server
+Exec=sudo systemctl start uwsgi
 
-[Desktop Action launch1]
-Name=
-Exec=
+[Desktop Action stop]
+Name=Stop server
+Exec=sudo systemctl stop uwsgi
 
-[Desktop Action launch2]
-Name=
-Exec=
+[Desktop Action restart]
+Name=Restart server
+Exec=sudo systemctl restart uwsgi
 
-[Desktop Action launch3]
-Name=
-Exec=
+
+[Desktop Action configfile]
+Name=Config File
+Exec=nautilus admin:///etc/uwsgi.ini
+
+
+[Desktop Action configdir]
+Name=Config Directory
+Exec=nautilus admin:///etc/uwsgi.d
+

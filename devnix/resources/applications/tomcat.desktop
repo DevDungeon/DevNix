@@ -2,22 +2,28 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
-Exec=
-Terminal=true
-Categories=Development;Education;
+Name=TomCat
+Exec=sudo systemctl start tomcat
+Terminal=false
+Actions=start;stop;restart;logs;configs
 
-Actions=launch1;launch2;launch3
+[Desktop Action start]
+Name=Start server
+Exec=sudo systemctl start tomcat
 
-[Desktop Action launch1]
-Name=
-Exec=
+[Desktop Action stop]
+Name=Stop server
+Exec=sudo systemctl stop tomcat
 
-[Desktop Action launch2]
-Name=
-Exec=
+[Desktop Action restart]
+Name=Restart server
+Exec=sudo systemctl restart tomcat
 
-[Desktop Action launch3]
-Name=
-Exec=
+[Desktop Action logs]
+Name=Logs
+Exec=nautilus admin:///var/log/tomcat
+
+[Desktop Action configs]
+Name=Configs
+Exec=nautilus admin:///etc/tomcat
+

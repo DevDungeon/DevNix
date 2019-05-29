@@ -3,22 +3,17 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=Hashcat
-Comment=
+Name=Ruby
+Comment=Ruby REPL
 Exec=irb
 Terminal=true
-Categories=Development;Education;
+Actions=pry;irb;
 
-Actions=launch1;launch2;launch3
-
-[Desktop Action launch1]
-Name=
-Exec=
+[Desktop Action pry]
+Name=PRY
+Exec=pry
 
 [Desktop Action launch2]
-Name=
-Exec=
+Name=IRB
+Exec=irb
 
-[Desktop Action launch3]
-Name=
-Exec=

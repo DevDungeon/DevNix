@@ -37,8 +37,11 @@ do
 done
 
 
+################
+## Zsh prompt ##
+################
 
-
+cp resources/prompt_devnix_setup /usr/share/zsh/site-functions/prompt_devnix_setup
 
 %end
 
@@ -53,6 +56,7 @@ done
 #################################
 
 sed -i "s/\/bin\/bash/\/bin\/zsh/" /etc/default/useradd
+
 
 ######################
 ## Sudo no password ##

@@ -2,22 +2,13 @@
 Type=Application
 Encoding=UTF-8
 Icon=org.gnome.Terminal
-Name=
-Comment=
-Exec=
-Terminal=false
-Categories=Development;Education;
+Name=Fish Shell
+Comment=Fish Shell
+Exec=fish
+Terminal=true
 
-Actions=launch1;launch2;launch3
+Actions=admin
 
-[Desktop Action launch1]
-Name=
-Exec=
-
-[Desktop Action launch2]
-Name=
-Exec=
-
-[Desktop Action launch3]
-Name=
-Exec=
+[Desktop Action admin]
+Name=Root Shell
+Exec=sudo fish

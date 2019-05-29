@@ -69,11 +69,11 @@ EOF
 }
 
 set -i vi
+setopt autocd
 
-# if [ -f /usr/bin/nvim ]
-# then
-#   alias vim=nvim
-#   export EDITOR=nvim
-# else
-#   export EDITOR=vim
-# fi
+## Prompt
+autoload -Uz promptinit
+promptinit
+prompt devnix
+
+
