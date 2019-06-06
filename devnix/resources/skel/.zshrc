@@ -22,14 +22,13 @@ alias pl='perl'
 alias gdif='git diff'
 alias st='git status'
 
-alias spider='scrapy runspider'
-
 alias ydl='youtube-dl'
 alias youtube-x='youtube-dl -x --audio-format vorbis --audio-quality 0'
 
 alias matrix='cmatrix -C cyan' 
 
 alias dnfi='sudo dnf install'
+alias dnfu='sudo dnf update'
 alias dnfs='dnf search'
 alias dnfr='sudo dnf remove'
 alias dnfp='dnf provides'

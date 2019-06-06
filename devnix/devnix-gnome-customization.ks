@@ -35,17 +35,19 @@ cat > /etc/dconf/db/local.d/00-devnix <<FOE
 ## Extensions ##
 ################
 
-# https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
-
 [org/gnome/shell]
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'background-logo@fedorahosted.org', 'TopIcons@phocean.net']
 
-## Background logo extension (background-logo@fedorahosted.org)
 [org/fedorahosted/background-logo-extension]
 logo-always-visible=true
 logo-border=20
 logo-file='/usr/local/share/devnix/logos/devnix_800px.png'
 logo-size=10
+
+[org/gnome/shell/extensions/topicons]
+tray-pos='right'
+icon-opacity=255
+
 
 
 #################
@@ -220,7 +222,7 @@ apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint
 [org/gnome/desktop/app-folders/folders/Development]
 name='Development'
 categories=['Development', 'Programming']
-apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop']
+apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop', 'jetbrains-toolbox.desktop']
 
 # docs
 # repls
@@ -248,7 +250,7 @@ apps=['org.gnome.Boxes.desktop', 'virt-manager.desktop']
 [org/gnome/desktop/app-folders/folders/Disks]
 name='Disks'
 categories=['Disk']
-apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'vifm.desktop', 'org.gnome.Nautilus.desktop']
+apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'vifm.desktop', 'org.gnome.Nautilus.desktop',  'dropbox.desktop']
 
 
 

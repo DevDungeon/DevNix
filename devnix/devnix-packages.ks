@@ -55,6 +55,7 @@ alien
 ## For customizing Gnome ##
 ###########################
 
+gnome-shell-extension-topicons-plus
 gnome-shell-extension-dash-to-dock
 gnome-tweak-tool
 dconf-editor
@@ -317,7 +318,7 @@ blender
 #################
 
 audacity
-ardour5
+#ardour5
 rhythmbox
 mpg123
 mpg123-devel
@@ -532,6 +533,7 @@ python3-pygame
 python3-qt5
 python3-qt5-devel
 python3-mod_wsgi
+python3-opencv
 mysql-connector-python3
 python3-tkinter
 python3-gobject
@@ -719,8 +721,9 @@ bullet-devel
 bullet-extras
 bullet-extras-devel
 
-
-
+###########
+## Other ##
+###########
 
 hashcat
 hashcat-devel
@@ -731,5 +734,7 @@ hashcat-doc
 dialog
 gtkdialog
 youtube-dl
+sloccount
 
+cloc
 %end
