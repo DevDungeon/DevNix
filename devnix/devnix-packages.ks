@@ -142,6 +142,8 @@ postgresql-odbc
 links
 lynx
 firefox
+mozilla-https-everywhere
+mozilla-noscript
 chromium
 chromedriver
 curl
@@ -411,6 +413,7 @@ guile-devel
 
 golang
 golang-docs
+golang-godoc
 
 
 ##########
@@ -607,8 +610,11 @@ jruby-javadoc
 rubygem-bundler
 #rubygem-bundler-doc#Broken
 rubygem-rake
+rubygem-yard
+rubygem-yard-doc
 rubygem-rake-doc
 rubygem-rdoc
+rubygem-ronn
 rubygem-guard
 rubygem-guard-doc
 #rubygem-rdoc-doc#Broken

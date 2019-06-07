@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=PHP Docs
+Exec=firefox /usr/share/doc/php-chunked-xhtml/indexes.html
+Terminal=false

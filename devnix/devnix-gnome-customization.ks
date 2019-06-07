@@ -196,7 +196,7 @@ apps=['libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-dra
 [org/gnome/desktop/app-folders/folders/Utilities]
 name='Utilities'
 categories=['Utility', 'Utilities']
-apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'keepass.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop', 'org.gnome.Software.desktop', 'org.freedesktop.GnomeAbrt.desktop']
+apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.tweaks.desktop', 'simple-scan.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.font-viewer.desktop', 'nm-connection-editor.desktop', 'yelp.desktop', 'org.gnome.Logs.desktop', 'gnome-abrt.desktop', 'gnome-control-center.desktop', 'org.gnome.FileRoller.desktop', 'mediawriter.desktop', 'org.kde.kgpg.desktop', 'htop.desktop', 'transmission-gtk.desktop', 'org.kde.ktorrent.desktop', 'org.gnome.Software.desktop', 'org.freedesktop.GnomeAbrt.desktop']
 
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
@@ -222,7 +222,7 @@ apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint
 [org/gnome/desktop/app-folders/folders/Development]
 name='Development'
 categories=['Development', 'Programming']
-apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'manedit.desktop', 'manview.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop', 'jetbrains-toolbox.desktop']
+apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop', 'jetbrains-toolbox.desktop']
 
 # docs
 # repls
@@ -257,23 +257,22 @@ apps=['gparted.desktop', 'blivet-gui.desktop', 'org.gnome.DiskUtility.desktop', 
 [org/gnome/desktop/app-folders/folders/Security]
 name='Security'
 categories=['Security']
-apps=['wireshark.desktop', 'nmap.desktop', 'hashcat.desktop', 'gpg.desktop']
-
-
-
+apps=['wireshark.desktop', 'nmap.desktop', 'hashcat.desktop', 'gpg.desktop', 'keepass.desktop']
 
 [org/gnome/desktop/app-folders/folders/Database]
 name='Database'
 categories=['Database']
 apps=['sqlitebrowser.desktop', 'mysql.desktop', 'postgres.desktop', 'derby.desktop', 'mysql-workbench.desktop']
 
-
 [org/gnome/desktop/app-folders/folders/WebServers]
 name='Web Servers'
 categories=['Web Server']
 apps=['nginx.desktop', 'apache2.desktop', 'tomcat.desktop', 'uwsgi.desktop']
 
-
+[org/gnome/desktop/app-folders/folders/Documentation]
+name='Documentation'
+categories=['Docs', 'Documentation']
+apps=['manedit.desktop', 'manview.desktop', 'python3-docs.desktop', 'ruby-docs.desktop', 'nodejs-docs.desktop', 'java-docs.desktop', 'go-docs.desktop', 'php-docs.desktop']
 
 FOE
 

@@ -1,39 +1,30 @@
 # TODO
 
-- 
-- set vscode, gedit, and terminal to solarized dark
-- change yellow text to white in prompt, make lines and username brighter
-- Change directory from green to cyan -
-
-
 ## zsh
-show error/return code on last command
-allow case insentive autocomplete
 
+allow case insentive autocomplete
+osscode
 
 - create launcher for 
-	documentations - pydoc, gem server, node, java, godocs,
-	jenkins
-	tor
-	cron tab
+
+	documentations - 
+
+    jenkins
+        start
+        stop
+        restart
+        /etc/jenkins
+        /var/log/jenkins
+	
+	sudo crontab -e
+        cron.d
+    
+    sudo systemctl start tor
+        sudo systemctl stop tor
+        sudo systemctl restart tor
+        /var/log/tor
+        /etc/tor
+
 	incrond
-
-
-
-- Move these in to devdungeon org
-- add them to repo list to clone
-
-DevNix
-GoogleHacking
-tcp_blackhole
-Soundboard
-GoogleDorks
-LampDash
-LifeSimulator
-Geddit
-Wardriver
-NameGenerator
-
-Securitywithgo
 
 

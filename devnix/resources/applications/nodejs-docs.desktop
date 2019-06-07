@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Node.js Docs
+Exec=firefox /usr/share/doc/nodejs/html/api/index.html
+Terminal=false

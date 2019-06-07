@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Python 3 Docs
+Exec=python3 -m pydoc -p 9999
+Terminal=true

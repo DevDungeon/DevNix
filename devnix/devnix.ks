@@ -19,19 +19,31 @@ part / --size 19750
 
 %post --nochroot --erroronfail
 
-#######################################
-## Store sources for building images ##
-#######################################
-
-git clone --branch f30 git@github.com:NanoDano/DevNix $INSTALL_ROOT/usr/src/DevNix
-cp resources/dist_keys/git_deploy_key $INSTALL_ROOT/usr/src/DevNix/id_rsa_deploy_key
 
 ###########################################
 ## Gecko driver for Firefox and Selenium ##
 ###########################################
 
-tar xzf resources/softlib/geckodriver-v0.24.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+tar xzf geckodriver-v0.24.0-linux64.tar.gz
+rm geckodriver-v0.24.0-linux64.tar.gz
 mv geckodriver $INSTALL_ROOT/usr/bin/
+
+
+##############
+## PHP Docs ##
+##############
+
+wget https://www.php.net/distributions/manual/php_manual_en.tar.gz
+tar xzf php_manual_en.tar.gz -C $INSTALL_ROOT/usr/share/doc
+
+
+#######################################
+## Store sources for building images ##
+#######################################
+
+git clone --branch f30 https://github.com/DevDungeon/DevNix $INSTALL_ROOT/usr/src/DevNix
+
 
 #######################################
 ## Clone all DevDungeon github repos ##
@@ -76,5 +88,3 @@ mv /etc/sudoers.temp /etc/sudoers -f
 
 
 %end
-
-

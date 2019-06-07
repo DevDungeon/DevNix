@@ -1,0 +1,5 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Solarized Dark",
+    "keyboard.dispatch": "keyCode"
+}

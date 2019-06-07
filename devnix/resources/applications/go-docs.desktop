@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Go Docs
+Exec=godoc -http=localhost:6060 -v
+Terminal=true

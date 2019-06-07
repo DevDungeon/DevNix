@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Ruby Docs
+Exec=gem server
+Terminal=true
+
+
+Actions=ri
+
+[Desktop Action ri]
+Name=Ri
+Exec=ri
+

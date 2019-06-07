@@ -19,8 +19,7 @@ This prompt is color-scheme-able.  You can invoke it thus:
   prompt devnix [ 8bit ] [<color1> [<color2> [<color3>] [<color4>]]
 
 where the colors are for the hyphens, current directory, user@host,
-and user input bits respectively.  The default colors are cyan, green,
-cyan, and white.  This theme works best with a dark background.
+and user input bits respectively. This theme works best with a dark background.
 
 If you have either UTF-8 or the `nexus' or `vga' console fonts or similar,
 you can specify the `8bit' option to use 8-bit replacements for the
@@ -56,13 +55,13 @@ prompt_devnix_setup () {
   fi
 
   # Colour scheme
-  prompt_devnix_color1=${1:-'cyan'}    # hyphens
-  prompt_devnix_color2=${2:-'green'}   # current directory
+  prompt_devnix_color1=${1:-'white'}    # hyphens
+  prompt_devnix_color2=${2:-'cyan'}   # current directory
   if [ "$USER" = "root" ]
   then
-    prompt_devnix_color3=${3:-'red'}    # user@host
+    prompt_devnix_color3=${3:-'red'}    # user@host (root)
   else
-    prompt_devnix_color3=${3:-'cyan'}    # user@host
+    prompt_devnix_color3=${3:-'blue'}    # user@host
   fi  
   prompt_devnix_color4=${4:-'white'}   # user input
 
@@ -203,7 +202,7 @@ bindkey '^e' end-of-line
 
 # if mode indicator wasn't setup by theme, define default
 if [[ "$MODE_INDICATOR" == "" ]]; then
-  MODE_INDICATOR="%F{white}<%F{cyan}<<"
+  MODE_INDICATOR="%F{white}<%F{cyan}<< "
 fi
 
 function vi_mode_prompt_info() {
@@ -212,7 +211,7 @@ function vi_mode_prompt_info() {
 
 # define right prompt, if it wasn't defined by a theme
 if [[ "$RPS1" == "" && "$RPROMPT" == "" ]]; then
-  RPS1='$(vi_mode_prompt_info)'
+  RPS1='$(vi_mode_prompt_info) %F{red}%(?..[%?] )'
 fi
 
 
