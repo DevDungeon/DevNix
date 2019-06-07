@@ -27,7 +27,10 @@ cp resources/logos/devnix_800px.png $INSTALL_ROOT/usr/share/pixmaps/fedora-logo.
 
 %post --erroronfail
 
-# Turns off the "Pre-release/Testing" warning on installer
+##############################################################
+## Turns off the "Pre-release/Testing" warning on installer ##
+##############################################################
+
 cat > /.buildstamp <<EOF
 [Main]
 IsFinal=true

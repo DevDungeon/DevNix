@@ -36,7 +36,7 @@ mv geckodriver $INSTALL_ROOT/usr/bin/
 
 wget https://www.php.net/distributions/manual/php_manual_en.tar.gz
 tar xzf php_manual_en.tar.gz -C $INSTALL_ROOT/usr/share/doc
-
+rm php_manual_en.tar.gz
 
 #######################################
 ## Store sources for building images ##
