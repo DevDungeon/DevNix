@@ -77,6 +77,6 @@ setopt autocd
 ## Prompt
 autoload -Uz promptinit
 promptinit
-prompt devnix
+prompt devnix cyan FFFFFF white FFFFFF
 
 

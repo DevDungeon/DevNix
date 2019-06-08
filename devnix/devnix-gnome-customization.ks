@@ -146,7 +146,7 @@ display-overview-map=true
 editor-font='Hack 11'
 highlight-current-line=true
 insert-spaces=true
-scheme='cobalt'
+scheme='solarized-dark'
 tabs-size=4
 use-default-font=false
 
@@ -186,7 +186,7 @@ favorite-apps=['firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.gedit
 #########################
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks', 'Database', 'WebServers']
+folder-children=['Utilities', 'Office', 'Terminal', 'Web', 'Editors', 'Graphics', 'Development', 'Audio', 'Security', 'Electronics', 'Virtualization', 'Disks', 'Database', 'Documentation', 'WebServers']
 
 [org/gnome/desktop/app-folders/folders/Office]
 name='Office'
