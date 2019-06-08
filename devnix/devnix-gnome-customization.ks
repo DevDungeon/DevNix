@@ -206,7 +206,7 @@ apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'links.deskt
 [org/gnome/desktop/app-folders/folders/Web]
 name='Web'
 categories=['Web', 'Email', 'Browser']
-apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop', 'lftp.desktop', 'rtorrent.desktop', 'irssi.desktop']
+apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.gnome.Evolution.desktop', 'links.desktop', 'pidgin.desktop', 'lftp.desktop', 'rtorrent.desktop', 'irssi.desktop', 'mutt.desktop']
 
 [org/gnome/desktop/app-folders/folders/Editors]
 name='Editors/IDE'
@@ -222,7 +222,7 @@ apps=['blender.desktop', 'inkscape.desktop', 'eog.desktop', 'org.kde.kolourpaint
 [org/gnome/desktop/app-folders/folders/Development]
 name='Development'
 categories=['Development', 'Programming']
-apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop', 'jetbrains-toolbox.desktop']
+apps=['gitg.desktop', 'glade-3.desktop', 'idle3.desktop', 'gradle.desktop', 'nemiver.desktop', 'org.gnome.meld.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-jconsole.desktop', 'java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64-policytool.desktop', 'qt5-designer.desktop', 'qt5-qdbusviewer.desktop', 'qt5-linguist.desktop', 'nodejs.desktop', 'python3.desktop', 'irb.desktop', 'pry.desktop', 'bpython-urwid.desktop', 'gdb.desktop', 'jetbrains-toolbox.desktop', 'jenkins.desktop']
 
 # docs
 # repls

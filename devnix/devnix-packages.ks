@@ -286,24 +286,7 @@ jenkins
 jenkins-javadoc
 jenkins-cli
 jenkins-webapp
-jenkins-credentials-plugin
-jenkins-credentials-plugin-javadoc
-jenkins-ant-plugin
-jenkins-ant-plugin-javadoc
-jenkins-junit-plugin
-jenkins-junit-plugin-javadoc
-jenkins-ldap-plugin
-jenkins-ldap-plugin-javadoc
-jenkins-plugins-pom
-jenkins-mailer-plugin
-jenkins-mailer-plugin-javadoc
-jenkins-javadoc-plugin
-jenkins-javadoc-plugin-javadoc
-jenkins-executable-war
-jenkins-executable-war-javadoc
-jenkins-executable-war-webroot
-jenkins-ssh-credentials-plugin
-jenkins-ssh-credentials-plugin-javadoc
+
 
 
 ####################

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Name=Mutt
+Comment=
+Exec=mutt
+Terminal=true
+

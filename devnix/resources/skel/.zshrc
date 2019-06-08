@@ -3,9 +3,6 @@ export PATH=$PATH:$HOME/NanoBin/bin:$HOME/.rvm/bin:$HOME/bin
 export GOPATH=$HOME
 
 
-# Zsh Theme
-export ZSH_THEME=flazz
-
 # Aliases
 alias h='history'
 alias zrc='vim ~/.zshrc'
@@ -16,22 +13,11 @@ alias py='python3'
 alias py2='python2'
 alias py3='python3'
 alias act='source ~/venv/bin/activate'
-alias rb='ruby'
-alias pl='perl'
-
-alias gdif='git diff'
-alias st='git status'
-
 alias ydl='youtube-dl'
 alias youtube-x='youtube-dl -x --audio-format vorbis --audio-quality 0'
 
 alias matrix='cmatrix -C cyan' 
 
-alias dnfi='sudo dnf install'
-alias dnfu='sudo dnf update'
-alias dnfs='dnf search'
-alias dnfr='sudo dnf remove'
-alias dnfp='dnf provides'
 
 # Load local config before initializing zsh
 source $HOME/.zshrc.local
@@ -82,8 +68,7 @@ set -i vi
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster-devnix"
 # DISABLE_AUTO_UPDATE="true"
-plugins=(git colorize fedora ruby systemd python)
+plugins=(git colorize fedora ruby systemd python vi-mode)
 source $ZSH/oh-my-zsh.sh
-
 
 
