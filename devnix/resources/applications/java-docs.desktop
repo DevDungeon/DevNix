@@ -5,3 +5,10 @@ Icon=org.gnome.Terminal
 Name=Java Docs
 Exec=firefox /usr/share/javadoc/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30/api/overview-summary.html
 Terminal=false
+
+
+Actions=alldocs
+
+[Desktop Action alldocs]
+Name=All JavaDocs
+Exec=nautilus /usr/share/javadoc
