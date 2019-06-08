@@ -606,8 +606,8 @@ ruby-doc
 ruby-devel
 
 jruby
-jruby-devel
-jruby-javadoc
+#jruby-devel
+#jruby-javadoc
 
 rubygem-bundler
 #rubygem-bundler-doc#Broken
