@@ -85,6 +85,7 @@ vim
 gvim
 codeblocks
 gnome-builder
+geany
 nano
 emacs
 
