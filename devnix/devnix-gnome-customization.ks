@@ -201,7 +201,7 @@ apps=['gnome-system-monitor.desktop', 'org.gnome.Characters.desktop', 'org.gnome
 [org/gnome/desktop/app-folders/folders/Terminal]
 name='Terminal'
 categories=['Terminal', 'Shell']
-apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'links.desktop', 'vifm.desktop', 'lftp.desktop', 'xterm.desktop', 'nano.desktop', 'rtorrent.desktop', 'irssi.desktop', 'zsh.desktop', 'fish.desktop', 'bash.desktop']
+apps=['org.gnome.Terminal.desktop', 'nvim.desktop', 'gvim.desktop', 'links.desktop', 'vifm.desktop', 'lftp.desktop', 'xterm.desktop', 'nano.desktop', 'rtorrent.desktop', 'irssi.desktop', 'zsh.desktop', 'fish.desktop', 'bash.desktop', 'vim.desktop']
 
 [org/gnome/desktop/app-folders/folders/Web]
 name='Web'
@@ -211,7 +211,7 @@ apps=['firefox.desktop', 'chromium-browser.desktop', 'filezilla.desktop', 'org.g
 [org/gnome/desktop/app-folders/folders/Editors]
 name='Editors/IDE'
 categories=['Editor', 'IDE']
-apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop', 'codeblocks.desktop', 'eclipse.desktop', 'idle3.desktop', 'org.kde.kate.desktop', 'code.desktop', 'monodevelop.desktop', 'gambas3.desktop', 'atom.desktop', 'netbeans.desktop', 'nano.desktop']
+apps=['org.gnome.gedit.desktop', 'gvim.desktop', 'nvim.desktop', 'emacs.desktop', 'godot.desktop', 'org.gnome.Builder.desktop', 'cc.arduino.arduinoide.desktop', 'codeblocks.desktop', 'eclipse.desktop', 'idle3.desktop', 'org.kde.kate.desktop', 'code.desktop', 'monodevelop.desktop', 'gambas3.desktop', 'atom.desktop', 'netbeans.desktop', 'nano.desktop', 'vim.desktop']
 #netbeans
 
 [org/gnome/desktop/app-folders/folders/Graphics]
