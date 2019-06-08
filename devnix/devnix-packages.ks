@@ -523,6 +523,7 @@ nodejs-typescript
 nodejs-sqlite3
 nodejs-discord-js
 nodejs-packaging
+nodejs-markdown
 
 
 ############

@@ -19,6 +19,13 @@ part / --size 19750
 
 %post --nochroot --erroronfail
 
+###############
+## Oh my zsh ##
+###############
+
+git clone https://github.com/robbyrussell/oh-my-zsh $INSTALL_ROOT/etc/skel/.oh-my-zsh
+cp resources/agnoster-devnix.zsh-theme $INSTALL_ROOT/etc/skel/.oh-my-zsh/custom/themes/agnoster-devnix.zsh-theme
+
 
 ###########################################
 ## Gecko driver for Firefox and Selenium ##

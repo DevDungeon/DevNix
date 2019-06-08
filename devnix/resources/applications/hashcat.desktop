@@ -6,5 +6,5 @@ Icon=org.gnome.Terminal
 Name=Hashcat
 Comment=
 Exec=sh -c "hashcat -h; ${SHELL:-bash}"
-Terminal=false
+Terminal=true
 

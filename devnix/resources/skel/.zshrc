@@ -72,11 +72,18 @@ EOF
 }
 
 set -i vi
-setopt autocd
 
+#setopt autocd
 ## Prompt
-autoload -Uz promptinit
-promptinit
-prompt devnix cyan FFFFFF white FFFFFF
+#autoload -Uz promptinit
+#promptinit
+#prompt devnix cyan FFFFFF white FFFFFF
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="agnoster-devnix"
+# DISABLE_AUTO_UPDATE="true"
+plugins=(git colorize fedora ruby systemd python)
+source $ZSH/oh-my-zsh.sh
+
 
 
