@@ -1,16 +1,12 @@
 ## Zsh prompt
+## File should go in:
 # /usr/share/zsh/site-functions/prompt_devnix_setup
-# Modified version of the devnix prompt theme
 
 
-
-
-
-
-
-
-
-
+## Load prompt with:
+#autoload -Uz promptinit
+#promptinit
+#prompt devnix cyan FFFFFF white FFFFFF
 
 prompt_devnix_help () {
   cat <<'EOF'
