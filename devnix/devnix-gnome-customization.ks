@@ -86,22 +86,20 @@ picture-uri='file:///usr/local/share/backgrounds/wallpaper.png'
 default-show-menubar=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-use-theme-colors=true
-
+use-theme-colors=false
 highlight-colors-set=true
 scrollback-unlimited=true
 cursor-colors-set=true
 delete-binding='ascii-backspace'
 bold-color-same-as-fg=false
 bold-is-bright=true
-background-color='#222222'
+background-color='rgb(0,43,54)'
 bold-color='rgb(30,150,150)'
-foreground-color='rgb(0,255,255)'
-cursor-background-color='rgb(200, 25, 200)'
+foreground-color='rgb(152,165,167)'
+cursor-background-color='rgb(0,255,212)'
 highlight-background-color='rgb(26,157,157)'
 highlight-foreground-color='rgb(20,53,50)'
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(20,255,0)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(30,93,94)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(0,135,135)', 'rgb(255,255,0)']
-
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
 
 #[org/gnome/desktop/interface]
 #gtk-theme='Adwaita-dark'
