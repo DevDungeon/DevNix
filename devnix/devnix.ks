@@ -63,12 +63,6 @@ do
 done
 
 
-################
-## Zsh prompt ##
-################
-
-cp resources/prompt_devnix_setup $INSTALL_ROOT/usr/share/zsh/site-functions/
-
 %end
 
 

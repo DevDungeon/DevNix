@@ -1,21 +1,8 @@
 # TODO
 
-## zsh
-
-allow case insentive autocomplete
-osscode
 
 - create launcher for 
 
-	documentations - 
-
-    jenkins
-        start
-        stop
-        restart
-        /etc/jenkins
-        /var/log/jenkins
-	
 	sudo crontab -e
         cron.d
     
