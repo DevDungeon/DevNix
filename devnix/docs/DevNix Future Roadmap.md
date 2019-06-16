@@ -43,9 +43,9 @@ Some ideas for the next release.
 ## Possible extra software
 
 - JetBrains IntelliJ and PyCharm build from source
+- VSCode from source
+- GitHub Desktop
 - OBS
-- kdenlive or equivalent video editor, screencasting
-- github desktop
-- something for screenrecording(gnome shell recorder?)
+- Kdenlive
 - https://github.com/EasyScreenCast/EasyScreenCast
-- C# & .net?
+- C#, Monodevelop

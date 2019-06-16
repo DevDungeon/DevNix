@@ -5,7 +5,7 @@
 %include devnix-branding.ks
 %include devnix-gnome-customization.ks
 %include devnix-fonts.ks
-#%include devnix-extra-software.ks
+# %include devnix-extra-software.ks
 
 
 ###################################################################

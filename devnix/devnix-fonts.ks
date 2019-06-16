@@ -1,5 +1,9 @@
 %post --nochroot --erroronfail
 
+###################
+## Install fonts ##
+###################
+
 # Hack font
 wget https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
 unzip Hack-v3.003-ttf.zip
@@ -17,7 +21,10 @@ mv ubuntu-font-family-0.83 $INSTALL_ROOT/usr/share/fonts
 
 %post --erroronfail
 
-# Flush font cache
+######################
+## Flush font cache ##
+######################
+
 fc-cache -fv
 
 %end
