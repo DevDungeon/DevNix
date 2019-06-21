@@ -99,7 +99,7 @@ bzr
 cvs
 mercurial
 subversion
-gitg
+qgit
 
 
 ####################
